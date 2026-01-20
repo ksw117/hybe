@@ -103,21 +103,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
     color: transparent;
 }
 .swiper-horizontal {
-    &.swiper-rtl .swiper-button-next,
-    &.swiper-rtl~.swiper-button-next,
-    &~.swiper-button-prev,
-    .swiper-button-prev {
-        opacity: 1;
-    }
-}
-.swiper-horizontal {
-    &.swiper-rtl .swiper-button-prev,
-    &.swiper-rtl~.swiper-button-prev,
-    &~.swiper-button-next,
-    .swiper-button-next {
-        left: auto; opacity: 1;
-        right: var(--swiper-navigation-sides-offset, 4px);
-    }
+    opacity: 1;
 }
 
 /* 페이지네이션 */
