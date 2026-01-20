@@ -1,5 +1,6 @@
 /* header */
 header {
+    max-width: 1920px;
     width: 93%; height: 80px; position: absolute; top: 54px; left: 70px; z-index: 999;
 
     /* glass */
@@ -13,7 +14,7 @@ header {
 
 header .logo { position: absolute; left: 40px; top: 31px;}
 
-.gnb {position: absolute; top: 0; left: 50%; margin-left: -400px;}
+.gnb {position: absolute; top: 0; left: 50%; margin-left: -420px;}
 .gnb ul { display: flex; flex-wrap: wrap;}
 .gnb ul li a {
     display: inline-block; padding: 0 32px; height: 80px; line-height: 80px;
@@ -22,7 +23,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
     transition: .3s;
 }
 
-.gnb ul li a:hover { color: #000;}
+.gnb ul li a:hover { background: #FFF; color: #000;}
 
 .icon_lang {
     width: 20px; height: 20px; position: absolute; top: 30px; right: 40px;
@@ -129,7 +130,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 /* active */
 .swiper-pagination-bullet-active {
     width: 50px; border-radius: 0;
-    background-color: #FFFF00;
+    background-color: #F9FF65;
 }
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
