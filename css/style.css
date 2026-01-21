@@ -1,6 +1,8 @@
 .section_title{
     font-family: "Montserrat", sans-serif;
-    font-size: 36px; font-weight: 700; letter-spacing: -2px;
+    font-size: 36px; font-weight: 700; letter-spacing: -2px; 
+    text-align: center; text-transform: uppercase;
+    margin-bottom: 60px;
 }
 
 .contents_title_small{font-size: 16px; font-weight: 700; letter-spacing: -0.5px;}
