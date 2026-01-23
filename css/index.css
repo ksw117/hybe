@@ -131,97 +131,71 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 
 /* multimedia */
 .multimedia {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    border-top: 2px solid #000;
+    width: 100%; height: 100vh; position: relative; border-top: 2px solid #000;
 }
 
 .multimedia .section_title {
-    position: absolute;
-    top: 160px;
-    left: 50%;
-    margin-left: -113px;
-    z-index: 2;
+    margin-bottom: 0;
 }
 
 .multimedia_wrap,
 .multimedia_wrapper {
-    width: 100%;
-    height: 100%;
+    width: 100%; height: 100%;
 }
 
 .contents_blur {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.50);
-    backdrop-filter: blur(5px);
+    position: absolute; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.50); backdrop-filter: blur(5px);
     z-index: 1;
 }
 
-.multimedia .contents_thum,
+.multimedia .contents_thum_wrap,
 .multimedia .btn,
 .multimedia .contents_title_large {
     z-index: 2;
 }
 
 .multimedia .multimedia_contents {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+    width: 100%; height: 100%;
+    display: flex; flex-wrap: wrap; justify-content: center; flex-direction: column; align-items: center;
 }
 
-.multimedia .contents_thum {
-    width: 1006px;
-    height: 566px;
+.multimedia .contents_thum_wrap {
+    position: absolute; width: 1006px;
+    display: flex; flex-wrap: wrap; justify-content: center; flex-direction: column; align-items: center; gap: 32px;
+}
+
+.multimedia .contents_thum{
+    width: 100%; height: 566px;
     box-shadow: 28px 19px 29.1px 0 rgba(0, 0, 0, 0.15);
 }
-
-.multimedia_contents.mv_01 {
+.multimedia_contents.mv_01, .multimedia_contents.mv_01 .contents_thum {
     background: url(../images/mv_01.jpg) no-repeat 50% 50% / cover;
 }
-
-.multimedia_contents.mv_02 {
+.multimedia_contents.mv_02, .multimedia_contents.mv_02 .contents_thum {
     background: url(../images/mv_02.jpg) no-repeat 50% 50% / cover;
 }
-
-.multimedia_contents.mv_03 {
+.multimedia_contents.mv_03, .multimedia_contents.mv_03 .contents_thum {
     background: url(../images/mv_03.jpg) no-repeat 50% 50% / cover;
 }
 
-.multimedia_contents.mv_01 .contents_thum {
-    background: url(../images/mv_01.jpg) no-repeat 50% 50% / cover;
+.multimedia .contents_thum .play_btn, .multimedia .contents_thum .pause_btn{
+    position: absolute; top: 40%; left: 44%;width: 72px; height: 72px;
+    border: 0;
 }
-
-.multimedia_contents.mv_02 .contents_thum {
-    background: url(../images/mv_02.jpg) no-repeat 50% 50% / cover;
+.multimedia .contents_thum .play_btn{
+    background:url(../images/paly_btn.png) no-repeat 50% 50% / cover;
 }
-
-.multimedia_contents.mv_03 .contents_thum {
-    background: url(../images/mv_03.jpg) no-repeat 50% 50% / cover;
+.multimedia .contents_thum .pause_btn{
+    background:url(../images/pause_btn.png) no-repeat 50% 50% / cover;
+    display: none;
 }
 
 .multimedia .btn {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 24px 12px 20px;
-    border-radius: 50px;
-    border: 1px solid #FFF;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+    padding: 12px 24px 12px 20px; box-sizing: border-box;
+    border-radius: 50px; border: 1px solid #FFF;
     background: #000;
-    box-sizing: border-box;
 }
 
 .multimedia_btn {
@@ -229,38 +203,32 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 .multimedia .btn .icon_play {
-    width: 20px;
-    height: 20px;
+    width: 20px; height: 20px;
     background: url(../images/icon_paly.png) no-repeat 50% 50% / cover;
 }
 
 .multimedia .btn:hover {
-    border: 1px solid #000;
-    background: #F9FF65;
+    border: 1px solid #000; background: #F9FF65;
 
     .multimedia_btn {
         color: #000;
     }
 
     .icon_play {
-        background: url(../images/icon_play_black.png);
+        background: url(../images/icon_play_black.png) no-repeat 50% 50% /cover ;
     }
 }
 
 .custom-prev.multi {
-    margin-top: -40px;
-    left: 367px;
+    margin-top: -60px; left: 367px;
 }
 
 .custom-next.multi {
-    margin-top: -40px;
-    right: 367px;
+    margin-top: -60px; right: 367px;
 }
 
-
 .multimedia .contents_title_large {
-    opacity: 0;
-    transition: opacity 0.4s ease;
+    opacity: 0; transition: opacity 0.4s ease;
 }
 
 .multimedia .swiper-slide-active .contents_title_large {
