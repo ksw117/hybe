@@ -161,7 +161,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 .multimedia .contents_thum_wrap {
-    position: absolute; width: 1006px;
+    width: 1006px;
     display: flex; flex-wrap: wrap; justify-content: center; flex-direction: column; align-items: center; gap: 32px;
 }
 
@@ -180,7 +180,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 .multimedia .contents_thum .play_btn, .multimedia .contents_thum .pause_btn{
-    position: absolute; top: 40%; left: 44%;width: 72px; height: 72px;
+    position: absolute; top: 40%; left: 44%; width: 72px; height: 72px;
     border: 0;
 }
 .multimedia .contents_thum .play_btn{
