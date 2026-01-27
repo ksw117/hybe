@@ -22,7 +22,6 @@ header .logo { position: absolute; left: 40px; top: 31px;}
     color: #FFF;
     transition: .3s;
 }
-
 .gnb ul li a:hover { background: #FFF; color: #000;}
 
 .icon_lang {
@@ -30,7 +29,6 @@ header .logo { position: absolute; left: 40px; top: 31px;}
     display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
     background: url(../images/icon_lang.png) no-repeat 50% 50% / cover;
 }
-
 
 /* hero */
 .hero_wrap {
@@ -47,7 +45,6 @@ header .logo { position: absolute; left: 40px; top: 31px;}
     display: flex; flex-wrap: wrap; flex-direction: column; align-items: center; gap: 32px;
     margin-bottom: 110px;
 }
-
 .hero_title_wrap .contents_article_large {
     text-align: center;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.20);
@@ -56,25 +53,20 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 .hero_01 {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.30) 100%), url(../images/hero_01.jpg) lightgray no-repeat 50% 50% / cover;
 }
-
 .hero_logo_01 {
     width: 246px; height: 80px;
     background: url(../images/hero_logo_01.png) no-repeat 50% 50% / cover;
 }
-
 .hero_02 {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.30) 100%), url(../images/hero_02.jpg) lightgray no-repeat 50% 50% / cover;
 }
-
 .hero_logo_02 {
     width: 110px; height: 120px;
     background: url(../images/hero_logo_02.png) no-repeat 50% 50% / cover;
 }
-
 .hero_03 {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.30) 100%), url(../images/hero_03.jpg) lightgray no-repeat 50% 50% / cover;
 }
-
 .hero_logo_03 {
     width: 250px; height: 100px;
     background: url(../images/hero_logo_03.png) no-repeat 50% 50% / cover;
@@ -83,40 +75,27 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 /* arrow */
 .custom-prev {
     width: 40px; height: 40px; display: block;
-    background-image: url(../images/arrow_left_large.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-image: url(../images/arrow_left_large.png); background-repeat: no-repeat; background-position: center; background-size: contain;
     opacity: 1;
 }
 .custom-next {
     width: 40px; height: 40px; display: block;
-    background-image: url(../images/arrow_right_large.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-image: url(../images/arrow_right_large.png); background-repeat: no-repeat; background-position: center; background-size: contain;
     opacity: 1;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    color: transparent;
-}
-.swiper-horizontal {
-    opacity: 1;
-}
+.swiper-button-prev, .swiper-button-next { color: transparent;}
+.swiper-horizontal {opacity: 1;}
 
 /* 페이지네이션 */
 .swiper-pagination { bottom: 54px;}
 .swiper-pagination-bullet {
     width: 15px; height: 4px; margin: 0 5px; border-radius: 0;
-    background-color: #fff;
-    opacity: 1;
+    background-color: #fff; opacity: 1;
 }
 /* active */
 .swiper-pagination-bullet-active {
-    width: 50px; border-radius: 0;
-    background-color: #F9FF65;
+    width: 50px; border-radius: 0; background-color: #F9FF65;
 }
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
@@ -134,12 +113,9 @@ header .logo { position: absolute; left: 40px; top: 31px;}
     width: 100%; height: 100vh; position: relative; border-top: 2px solid #000;
 }
 
-.multimedia .section_title {
-    margin-bottom: 0;
-}
+.multimedia .section_title { margin-bottom: 0;}
 
-.multimedia_wrap,
-.multimedia_wrapper {
+.multimedia_wrap, .multimedia_wrapper {
     width: 100%; height: 100%;
 }
 
@@ -149,9 +125,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
     z-index: 1;
 }
 
-.multimedia .contents_thum_wrap,
-.multimedia .btn,
-.multimedia .contents_title_large {
+.multimedia .contents_thum_wrap, .multimedia .btn, .multimedia .contents_title_large {
     z-index: 2;
 }
 
@@ -180,8 +154,8 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 .multimedia .contents_thum .play_btn, .multimedia .contents_thum .pause_btn{
-    position: absolute; top: 40%; left: 44%; width: 72px; height: 72px;
-    border: 0;
+    width: 72px; height: 72px; border: 0;
+    position: absolute; top: 50%; left: 50%; transform: translate(-36px, -72px);
 }
 .multimedia .contents_thum .play_btn{
     background:url(../images/paly_btn.png) no-repeat 50% 50% / cover;
@@ -192,37 +166,18 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 .multimedia .btn {
-    display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
-    padding: 12px 24px 12px 20px; box-sizing: border-box;
-    border-radius: 50px; border: 1px solid #FFF;
-    background: #000;
+    background: rgba(0, 0, 0, 0.50);
 }
-
-.multimedia_btn {
-    color: #FFF;
-}
-
 .multimedia .btn .icon_play {
-    width: 20px; height: 20px;
     background: url(../images/icon_paly.png) no-repeat 50% 50% / cover;
 }
-
-.multimedia .multimedia_btn:hover {
-    border: 1px solid #000; background: #F9FF65;
-
-    span{
-        color: #000;
-    }
-
-    .icon_play {
-        background: url(../images/icon_play_black.png) no-repeat 50% 50% /cover ;
-    }
+.multimedia .multimedia_btn:hover .icon_play{
+    background: url(../images/icon_play_black.png) no-repeat 50% 50% /cover ;
 }
 
 .custom-prev.multi {
     margin-top: -60px; left: 367px;
 }
-
 .custom-next.multi {
     margin-top: -60px; right: 367px;
 }
@@ -230,7 +185,35 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 .multimedia .contents_title_large {
     opacity: 0; transition: opacity 0.4s ease;
 }
-
 .multimedia .swiper-slide-active .contents_title_large {
     opacity: 1;
+}
+
+/* video */
+.video_wrap{
+    width: 100%; height: 100%;
+}
+.video_wrap iframe{
+    width: 100%; height: 100%;
+}
+
+/* release */
+.release{
+    width: 100%; height: 100vh;
+}
+.release_wrap{width: 100%; height: 100%;}
+
+
+.album .album_img{
+    width: 600px; height: 600px;
+}
+
+.album_01 .album_img{background: url(../images/album_01.jpg) no-repeat 50% 50% / cover;}
+
+
+.release .btn .icon_album{
+    background: url(../images/icon_album.png) no-repeat 50% 50% / cover;
+}
+.release .btn .icon_music {
+    background: url(../images/icon_music.png) no-repeat 50% 50% / cover;
 }

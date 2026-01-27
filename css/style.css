@@ -2,7 +2,6 @@
     font-family: "Montserrat", sans-serif;
     font-size: 36px; font-weight: 700; letter-spacing: -2px; 
     text-align: center; text-transform: uppercase;
-    margin-bottom: 60px;
 }
 
 .contents_title_small{font-size: 16px; font-weight: 700; letter-spacing: -0.5px;}
@@ -15,4 +14,18 @@
 .contents_article_large{font-size: 22px; font-weight: 700; letter-spacing: -1px; line-height: 150%;}
 
 
-.btn{font-size: 16px; font-weight: 700; letter-spacing: -0.5px;}
+
+.btn{
+    font-size: 16px; font-weight: 700; letter-spacing: -0.5px; color: #FFF;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+    padding: 12px 24px 12px 20px; box-sizing: border-box;
+    border-radius: 50px; border: 1px solid #FFF;
+}
+.btn:hover{
+    background: #F9FF65 !important; 
+    border: 1px solid #000; 
+    color: #000;
+}
+.btn div{
+    width: 20px; height: 20px;
+}

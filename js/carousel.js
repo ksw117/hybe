@@ -33,6 +33,8 @@ document.addEventListener(`DOMContentLoaded`, function () {
             nextEl: '.custom-next.multi',
             prevEl: '.custom-prev.multi',
         },
+
+        
     });
 
 
