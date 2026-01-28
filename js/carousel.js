@@ -16,8 +16,6 @@ document.addEventListener(`DOMContentLoaded`, function () {
             prevEl: ".custom-prev",
         },
 
-
-
     });
 
     const multimediaSwiper = new Swiper('.multimedia_wrap', {
