@@ -73,6 +73,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
                 '{"event":"command","func":"playVideo","args":""}',
                 "*"
             );
+
         });
 
         // 3️⃣ pause
@@ -113,5 +114,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
             pauseBtn.style.display = "none";
         });
     });
+
+
 
 });
