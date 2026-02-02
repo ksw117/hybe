@@ -116,5 +116,50 @@ document.addEventListener(`DOMContentLoaded`, function () {
     });
 
 
+    const releaseSwiper = new Swiper('.release_wrap', {
+        slidesPerView: '3', 
+        centeredSlides: true,
+        spaceBetween: 60,
+        loop: true,
+        speed: 800,
+        watchSlidesProgress: true, // 슬라이드 진행 상태 감시
+
+        navigation: {
+            nextEl: '.custom-next.album',
+            prevEl: '.custom-prev.album',
+        },
+
+    });
+
+    function positionSlides(swiper) {
+        const slides = swiper.slides;
+        const activeIndex = swiper.activeIndex;
+
+        slides.forEach((slide, index) => {
+            // 활성 슬라이드 찾기
+            if (slide.classList.contains('swiper-slide-active')) {
+                slide.style.transform = 'scale(1)';
+                slide.style.opacity = '1';
+                slide.style.zIndex = '3';
+            }
+            // 이전 슬라이드 (왼쪽)
+            else if (slide.classList.contains('swiper-slide-prev')) {
+                slide.style.transform = 'scale(0.5)';
+                slide.style.opacity = '0.5';
+                slide.style.zIndex = '1';
+            }
+            // 다음 슬라이드 (오른쪽)
+            else if (slide.classList.contains('swiper-slide-next')) {
+                slide.style.transform = 'scale(0.5)';
+                slide.style.opacity = '0.5';
+                slide.style.zIndex = '1';
+            }
+            // 나머지 슬라이드
+            else {
+                slide.style.opacity = '0';
+                slide.style.zIndex = '0';
+            }
+        });
+    }
 
 });
