@@ -119,7 +119,6 @@ document.addEventListener(`DOMContentLoaded`, function () {
     const releaseSwiper = new Swiper('.release_wrap', {
         slidesPerView: '3', 
         centeredSlides: true,
-        spaceBetween: 120;
         loop: true,
         speed: 800,
         watchSlidesProgress: true, // 슬라이드 진행 상태 감시
