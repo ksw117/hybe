@@ -208,7 +208,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 .release.swiper { overflow: visible;}
 
-.release_wrap, .release_wrapper{
+.release_wrap, .release_wrapper.swiper-wrapper{
     width: 100%;
 }
 .album {
@@ -218,7 +218,6 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 
 .album .album_img {
     width: 600px; height: 600px;
-    transition: all 0.8s ease;
 }
 
 .album_01 .album_img {background: url(../images/album_01.jpg) no-repeat 50% 50% / cover;}
@@ -253,7 +252,6 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 .swiper-slide:not(.swiper-slide-active) .btn_wrap {
     opacity: 0; visibility: hidden;
 }
-
 
 /* 활성 슬라이드 */
 .swiper-slide-active .album { transform: scale(1); opacity: 1;}
