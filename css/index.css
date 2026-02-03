@@ -211,15 +211,14 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 .release_wrap, .release_wrapper.swiper-wrapper{
     width: 100%;
 }
+
 .album {
     display: flex; flex-wrap: wrap; flex-direction: column; align-items: center; justify-content: center; gap: 32px;
     transition: all 0.8s ease;
 }
-
 .album .album_img {
     width: 600px; height: 600px;
 }
-
 .album_01 .album_img {background: url(../images/album_01.jpg) no-repeat 50% 50% / cover;}
 .album_02 .album_img {background: url(../images/album_02.jpg) no-repeat 50% 50% / cover;}
 .album_03 .album_img {background: url(../images/album_03.jpg) no-repeat 50% 50% / cover;}
@@ -230,7 +229,6 @@ header .logo { position: absolute; left: 40px; top: 31px;}
     display: flex; flex-wrap: wrap; flex-direction: column; gap: 6px;
     transition: all 0.8s ease;
 }
-
 .contents_text_wrap .contents_title_medium {
     font-weight: 500; line-height: normal;
 }
@@ -245,7 +243,6 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 .swiper-slide:not(.swiper-slide-active).album {
     transform: scale(0.5); opacity: 0.5;
 }
-
 .swiper-slide:not(.swiper-slide-active).album .album_img {
     width: 600px; height: 600px;
 }
@@ -258,7 +255,6 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 
 .swiper-slide-active .album .album_img { width: 600px; height: 600px; }
 .swiper-slide-active .btn_wrap { opacity: 1; visibility: visible; }
-.swiper-slide-active .contents_text_wrap { opacity: 1; }
 
 .release .btn .icon_album { background: url(../images/icon_album.png) no-repeat 50% 50% / cover; }
 .release .btn:hover .icon_album {background: url(../images/icon_album_black.png); }
@@ -268,3 +264,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 
 .custom-prev.album { margin-top: -6%; left: 30%; }
 .custom-next.album { margin-top: -6%; right: 30%; }
+
+
+
+
