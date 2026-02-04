@@ -161,4 +161,20 @@ document.addEventListener(`DOMContentLoaded`, function () {
         });
     }
 
+
+
+    const artists = document.querySelectorAll('.artist_name');
+    const images = document.querySelectorAll('.artist_img');
+    
+    artists.forEach((artist, index) => {
+      artist.addEventListener('mouseenter', () => {
+        artists.forEach(a => a.classList.remove('active'));
+        images.forEach(img => img.classList.remove('active'));
+    
+        artist.classList.add('active');
+        images[index].classList.add('active');
+      });
+    });
+    
+    
 });

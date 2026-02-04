@@ -271,7 +271,8 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 
 /* artist */
 .artist{
-    width: 100%;
+    width: 93%;
+    margin-top: 80px; margin-bottom: 120px; margin-left: auto; margin-right: auto;
 }
 
 .artist .section_title{
@@ -279,68 +280,66 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 .artist_wrap {
-    width: 93%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    height: 100vh;
+    width: 100%; margin: 0 auto;
+    display: flex; justify-content: space-between;
 }
 
-.image_wrap {
-  width: 1384px;
-  height: 770px;
+.artist_img_wrap {
+  width: 1384px; height: 770px;
   flex-shrink: 0;
   position: relative;
   overflow: hidden;
 }
 
-.image_wrap .artist_img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0; left: 0;
+.artist_img_wrap .artist_img {
+    width: 100%; height: 100%;
+    position: absolute; top: 0; left: 0;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transform: scale(1.05);
+    transition:  opacity 0.6s ease, transform 0.8s ease;
+}
+.artist_img_wrap .artist_img:first-child{background: url(../images/artist_01.jpg) no-repeat 50% 50% / cover;}
+.artist_img_wrap .artist_img:nth-child(2){background: url(../images/artist_02.jpg) no-repeat 50% 50% / cover;}
+.artist_img_wrap .artist_img:nth-child(3){background: url(../images/artist_03.jpg) no-repeat 50% 50% / cover;}
+.artist_img_wrap .artist_img:nth-child(4){background: url(../images/artist_04.jpg) no-repeat 50% 50% / cover;}
+.artist_img_wrap .artist_img:nth-child(5){background: url(../images/artist_05.jpg) no-repeat 50% 50% / cover;}
+.artist_img_wrap .artist_img:nth-child(6){background: url(../images/artist_06.jpg) no-repeat 50% 50% / cover;}
+.artist_img_wrap .artist_img:nth-child(7){background: url(../images/artist_07.jpg) no-repeat 50% 50% / cover;}
+.artist_img_wrap .artist_img:nth-child(8){background: url(../images/artist_08.jpg) no-repeat 50% 50% / cover;}
+.artist_img_wrap .artist_img:nth-child(9){background: url(../images/artist_09.jpg) no-repeat 50% 50% / cover;}
+.artist_img_wrap .artist_img:nth-child(10){background: url(../images/artist_10.jpg) no-repeat 50% 50% / cover;}
+.artist_img_wrap .artist_img:nth-child(11){background: url(../images/artist_11.jpg) no-repeat 50% 50% / cover;}
+.artist_img_wrap .artist_img:nth-child(12){background: url(../images/artist_12.jpg) no-repeat 50% 50% / cover;}
+.artist_img_wrap .artist_img:nth-child(13){background: url(../images/artist_13.jpg) no-repeat 50% 50% / cover;}
+.artist_img_wrap .artist_img:nth-child(14){background: url(../images/artist_14.jpg) no-repeat 50% 50% / cover;}
+.artist_img_wrap .artist_img:nth-child(15){background: url(../images/artist_15.jpg) no-repeat 50% 50% / cover;}
+.artist_img_wrap .artist_img:nth-child(16){background: url(../images/artist_16.jpg) no-repeat 50% 50% / cover;}
+.artist_img_wrap .artist_img:last-child{background: url(../images/artist_17.jpg) no-repeat 50% 50% / cover;}
+
+.artist_img_wrap .artist_img.active {
+    opacity: 1;  transform: scale(1);
 }
 
-.image_wrap .artist_image.active {
-    opacity: 1;
+.artist_text_wrap {
+    width: 436px; height: 770px; padding-right: 2px;
+    overflow-y: auto; scrollbar-width: none; /* Firefox */
 }
-
-.image_wrap img.active {
-  opacity: 1;
-}
-
-.text_wrap {
-    width: 418px;
-    height: 770px; /* 세로 길이 */
-    overflow-y: auto;
-    scrollbar-width: none; /* Firefox */
-}
-
-.text_wrap::-webkit-scrollbar {
+.artist_text_wrap::-webkit-scrollbar {
     display: none; /* Chrome, Safari */
 }
 
 .artist_name {
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 130%;
-  letter-spacing: -3px;
-  text-align: end;
-  margin-bottom: 6px;
-  color: #aaa;
+  font-size: 38px; font-weight: 700; letter-spacing: -2px; text-align: end;
+  margin-bottom: 10px;
+  color: #999;
   cursor: pointer;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
-.artist_name:hover,
+
 .artist_name.active {
   color: #ffe600;
+  transform: translateX(-6px);
 }
-/* 스크롤바 스타일 (선택) */
-.text_wrap::-webkit-scrollbar {
-  width: 6px;
-}
-.text_wrap::-webkit-scrollbar-thumb {
+.artist_text_wrap::-webkit-scrollbar-thumb {
   background: #333;
 }
