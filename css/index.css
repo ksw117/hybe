@@ -189,10 +189,12 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 .custom-prev.multi {
-    margin-top: -2%; left: 19%;
+    top: 50%; left: 19%;
+    transform: translateY(-50%);
 }
 .custom-next.multi {
-    margin-top: -2%; right: 19%;
+    top: 50%; right: 19%;
+    transform: translateY(-50%);
 }
 
 .multimedia .contents_title_large {
@@ -262,8 +264,8 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 .release .btn .icon_music { background: url(../images/icon_music.png) no-repeat 50% 50% / cover;}
 .release .btn:hover .icon_music { background: url(../images/icon_music_black.png); }
 
-.custom-prev.album { margin-top: -6%; left: 30%; }
-.custom-next.album { margin-top: -6%; right: 30%; }
+.custom-prev.album { top: 43%; left: 30%; transform: translateY(-50%);}
+.custom-next.album { top: 43%; right: 30%; transform: translateY(-50%);}
 
 
 
