@@ -271,7 +271,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 
 /* artist */
 .artist{
-    width: 93%;
+    width: 95%;
     margin-top: 80px; margin-bottom: 120px; margin-left: auto; margin-right: auto;
 }
 
@@ -285,7 +285,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 .artist_img_wrap {
-  width: 1384px; height: 770px;
+  width: 75%; height: 770px;
   flex-shrink: 0;
   position: relative;
   overflow: hidden;
@@ -321,7 +321,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 .artist_text_wrap {
-    width: 436px; height: 770px; padding-right: 2px;
+    width: 25%; height: 770px; padding-right: 2px;
     overflow-y: auto; scrollbar-width: none; /* Firefox */
 }
 .artist_text_wrap::-webkit-scrollbar {
