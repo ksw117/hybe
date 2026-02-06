@@ -243,7 +243,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 
 /* 미리보기 상태 (활성 슬라이드가 아닐 때) */
 .swiper-slide:not(.swiper-slide-active).album {
-    transform: scale(0.5); opacity: 0.5; transition: all .6s ease;
+    transform: scale(0.5); opacity: 0.5; transition: .2s;
 }
 .swiper-slide:not(.swiper-slide-active).album .album_img {
     width: 600px; height: 600px;
@@ -255,7 +255,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 /* 활성 슬라이드 */
 .swiper-slide-active .album { transform: scale(1); opacity: 1;}
 
-.swiper-slide-active .album .album_img { width: 600px; height: 600px; }
+.swiper-slide-active .album .album_img { width: 600px; height: 600px;  }
 .swiper-slide-active .btn_wrap { opacity: 1; visibility: visible; }
 
 .release .btn .icon_album { background: url(../images/icon_album.png) no-repeat 50% 50% / cover; }
@@ -340,16 +340,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 /* scrollbar */
-.artist_text_wrap::-webkit-scrollbar {
-    width: 4px;
-}
-.artist_text_wrap::-webkit-scrollbar-track {
-  background: rgba(255,255,255,0.1);
-}
-.artist_text_wrap::-webkit-scrollbar-thumb {
-  background: rgba(255,255,255,0.4);
-  border-radius: 10px;
-}
-.artist_text_wrap::-webkit-scrollbar-thumb:hover {
-  background: rgba(255,255,255,0.7);
-}
+.artist_text_wrap::-webkit-scrollbar { width: 4px;}
+.artist_text_wrap::-webkit-scrollbar-track { background: rgba(255,255,255,0.1);}
+.artist_text_wrap::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.4); border-radius: 10px;}
+.artist_text_wrap::-webkit-scrollbar-thumb:hover {background: rgba(255,255,255,0.7);}
