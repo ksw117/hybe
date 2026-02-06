@@ -344,7 +344,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
     width: 4px;
 }
 .artist_text_wrap::-webkit-scrollbar-track {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.1);
 }
 .artist_text_wrap::-webkit-scrollbar-thumb {
   background: rgba(255,255,255,0.4);
