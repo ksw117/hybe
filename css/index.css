@@ -253,7 +253,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 /* 활성 슬라이드 */
-.swiper-slide-active .album { transform: scale(1); opacity: 1; transition: all 1.2s cubic-bezier(.58, 0, .4, 1) ease;}
+.swiper-slide-active .album { transform: scale(1); opacity: 1;}
 
 .swiper-slide-active .album .album_img { width: 600px; height: 600px; }
 .swiper-slide-active .btn_wrap { opacity: 1; visibility: visible; }

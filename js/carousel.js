@@ -120,7 +120,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
         slidesPerView: '3', 
         centeredSlides: true,
         loop: true,
-        speed: 100,
+        speed: 200,
         watchSlidesProgress: true, // 슬라이드 진행 상태 감시
 
         navigation: {
@@ -137,7 +137,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
         slides.forEach((slide, index) => {
             // 활성 슬라이드 찾기
             if (slide.classList.contains('swiper-slide-active')) {
-
+                slide.style.transition = 'all 1.2s cubic-bezier(.58, 0, .4, 1) ease'
                 slide.style.transform = 'scale(1)';
                 slide.style.opacity = '1';
                 slide.style.zIndex = '3';
