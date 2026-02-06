@@ -243,7 +243,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 
 /* 미리보기 상태 (활성 슬라이드가 아닐 때) */
 .swiper-slide:not(.swiper-slide-active).album {
-    transform: scale(0.5); opacity: 0.5;
+    transform: scale(0.5); opacity: 0.5; transition: all .6s ease;
 }
 .swiper-slide:not(.swiper-slide-active).album .album_img {
     width: 600px; height: 600px;
@@ -253,7 +253,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 /* 활성 슬라이드 */
-.swiper-slide-active .album { transform: scale(1); opacity: 1;}
+.swiper-slide-active .album { transform: scale(1); opacity: 1; transition: all 1.2s cubic-bezier(.58, 0, .4, 1) ease;}
 
 .swiper-slide-active .album .album_img { width: 600px; height: 600px; }
 .swiper-slide-active .btn_wrap { opacity: 1; visibility: visible; }
@@ -285,7 +285,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 .artist_img_wrap {
-  width: 75%; height: 770px;
+  flex: 1; height: 770px;
   flex-shrink: 0;
   position: relative;
   overflow: hidden;
@@ -321,17 +321,14 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 .artist_text_wrap {
-    width: 25%; height: 770px; padding-right: 2px;
-    overflow-y: auto; scrollbar-width: none; /* Firefox */
+    width: 452px; height: 770px;
+    overflow-y: auto;
     display: flex; flex-direction: column;
-}
-.artist_text_wrap::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
 }
 
 .artist_name {
   font-size: 38px; font-weight: 700; letter-spacing: -2px; text-align: end;
-  margin-bottom: 10px;
+  margin-bottom: 10px; padding-right: 16px;
   color: #999;
   cursor: pointer;
   transition: color 0.3s ease, transform 0.3s ease;
@@ -341,6 +338,18 @@ header .logo { position: absolute; left: 40px; top: 31px;}
   color: #ffe600;
   transform: translateX(-6px);
 }
+
+/* scrollbar */
+.artist_text_wrap::-webkit-scrollbar {
+    width: 4px;
+}
+.artist_text_wrap::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.05);
+}
 .artist_text_wrap::-webkit-scrollbar-thumb {
-  background: #333;
+  background: rgba(255,255,255,0.4);
+  border-radius: 10px;
+}
+.artist_text_wrap::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.7);
 }
