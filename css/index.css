@@ -323,6 +323,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 .artist_text_wrap {
     width: 25%; height: 770px; padding-right: 2px;
     overflow-y: auto; scrollbar-width: none; /* Firefox */
+    display: flex; flex-direction: column;
 }
 .artist_text_wrap::-webkit-scrollbar {
     display: none; /* Chrome, Safari */
