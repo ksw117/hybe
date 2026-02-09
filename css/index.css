@@ -393,3 +393,45 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 
 /* labels */
 .labels{width: 100%; margin: 120px auto;}
+.labels_wrap{width: 100%;}
+.labels_wrapper{width: 100%; display: flex; flex-wrap: wrap; gap: 24px;}
+
+.labels_card{
+    width: 420px; padding: 24px;
+    display: flex; flex-wrap: wrap; flex-direction: column; gap: 24px;
+    border: 1px solid #999; box-sizing: border-box;
+}
+.labels_top{display: flex; flex-wrap: wrap; justify-content: start; align-items: center;gap: 24px;}
+.labels_logo{width: 90px; height: 90px;}
+.labels_card:first-child .labels_top .labels_logo{background: url(../images/label_01.png) no-repeat 50% 50% / cover;}
+.labels_card:nth-child(2) .labels_top .labels_logo{background: url(../images/label_02.png) no-repeat 50% 50% / cover;}
+.labels_card:nth-child(3) .labels_top .labels_logo{background: url(../images/label_03.png) no-repeat 50% 50% / cover;}
+.labels_card:nth-child(4) .labels_top .labels_logo{background: url(../images/label_04.png) no-repeat 50% 50% / cover;}
+.labels_card:nth-child(5) .labels_top .labels_logo{background: url(../images/label_05.png) no-repeat 50% 50% / cover;}
+.labels_card:nth-child(6) .labels_top .labels_logo{background: url(../images/label_06.png) no-repeat 50% 50% / cover;}
+.labels_card:nth-child(7) .labels_top .labels_logo{background: url(../images/label_07.png) no-repeat 50% 50% / cover;}
+.labels_card:nth-child(8) .labels_top .labels_logo{background: url(../images/label_08.png) no-repeat 50% 50% / cover;}
+.labels_card:nth-child(9) .labels_top .labels_logo{background: url(../images/label_09.png) no-repeat 50% 50% / cover;}
+.labels_card:nth-child(10) .labels_top .labels_logo{background: url(../images/label_10.png) no-repeat 50% 50% / cover;}
+.labels_card:nth-child(11) .labels_top .labels_logo{background: url(../images/label_11.png) no-repeat 50% 50% / cover;}
+.labels_card:nth-child(12) .labels_top .labels_logo{background: url(../images/label_12.png) no-repeat 50% 50% / cover;}
+.labels_card:nth-child(13) .labels_top .labels_logo{background: url(../images/label_13.png) no-repeat 50% 50% / cover;}
+.labels_card:last-child .labels_top .labels_logo{background: url(../images/label_14.png) no-repeat 50% 50% / cover;}
+
+.labels_card .text_wrap{display: flex; flex-wrap: wrap; flex-direction: column; gap: 12px;}
+.labels_card .text_wrap .title_wrap{display: flex; flex-wrap: wrap; flex-direction: column; gap: 2px;}
+.labels_card .text_wrap .title_wrap .contents_article_small,
+.labels_card .text_wrap .title_wrap .contents_title_medium{text-transform: uppercase;}
+.labels_btn{
+    width: 100%; padding: 10px 0; box-sizing: border-box;
+    display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+    background: #FFF; color: #000;
+}
+.labels_btn:hover{
+    background: #F9FF65;
+}
+
+.custom-prev.labels{right: 48px;}
+.custom-next.labels{right: 48px;}
+
+
