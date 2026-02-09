@@ -344,3 +344,52 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 .artist_text_wrap::-webkit-scrollbar-track { background: rgba(255,255,255,0.1);}
 .artist_text_wrap::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.4); border-radius: 10px;}
 .artist_text_wrap::-webkit-scrollbar-thumb:hover {background: rgba(255,255,255,0.7);}
+
+
+/* flatform */
+.flatform{
+    width: 100%; margin: 120px 0; 
+    display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: center;
+}
+
+.flatform .contents{
+    display: flex; flex-wrap: wrap; flex-direction: row; gap: 20px;
+}
+
+.flatform_card{
+    width: 385px; height: 514px;
+    display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: center; gap: 60px;
+    padding: 60px 36px; box-sizing: border-box; border-radius: 20px;
+    background: linear-gradient(149deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.50) 100%);
+    transition: background 0.8s ease;
+    opacity: 0;
+}
+.flatform_card.animate__fadeInUp {
+    opacity: 1;
+}
+.flatform_card:hover{
+    background: linear-gradient(149deg, #0074E2 0%, #80BAF0 50%, #FFF 100%);
+}
+
+.flatform_card .card_contents{
+    display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: center; gap: 24px;
+}
+.flatform_card .text_wrap{
+    display: flex; flex-wrap: wrap; flex-direction: column; gap: 6px; justify-content: center; text-align: center;
+}
+
+.flatform_icon{width: 160px; height: 160px;}
+
+.flatform_card:nth-child(2), .flatform_card:last-child{margin-top: 160px;}
+
+.flatform_card:first-child .flatform_logo{width: 239px; height: 33px; background: url(../images/platform_logo_01.png) no-repeat 50% 50% / cover;}
+.flatform_card:first-child .flatform_icon{background: url(../images/platform_01.png) no-repeat 50% 50% / cover;}
+.flatform_card:nth-child(2) .flatform_logo{width: 300px; height: 46px; background: url(../images/platform_logo_02.png) no-repeat 50% 50% / cover;}
+.flatform_card:nth-child(2) .flatform_icon{background: url(../images/platform_02.png) no-repeat 50% 50% / cover;}
+.flatform_card:nth-child(3) .flatform_logo{width: 316px; height: 34px; background: url(../images/platform_logo_03.png) no-repeat 50% 50% / cover;}
+.flatform_card:nth-child(3) .flatform_icon{background: url(../images/platform_03.png) no-repeat 50% 50% / cover;}
+.flatform_card:last-child .flatform_logo{width: 313px; height: 36px; background: url(../images/platform_logo_04.png) no-repeat 50% 50% / cover;}
+.flatform_card:last-child .flatform_icon{background: url(../images/platform_04.png) no-repeat 50% 50% / cover;}
+
+/* labels */
+.labels{width: 100%; margin: 120px auto;}

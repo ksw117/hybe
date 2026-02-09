@@ -176,5 +176,45 @@ document.addEventListener(`DOMContentLoaded`, function () {
       });
     });
     
+    // let num = 0.5;
+    // document.querySelectorAll('.flatform_card').forEach((el)=>{
+    // // 각 엘리먼트의 animation-delay를 0.2
+    // el.style.setProperty('animation-delay', `${num}s`);
+    // num += 0.2;
+    // });
+
+    // flatform 섹션 애니메이션
+const flatformSection = document.querySelector('.flatform');
+const flatformCards = document.querySelectorAll('.flatform_card');
+
+// 초기에는 애니메이션 클래스 제거
+flatformCards.forEach((card) => {
+    card.classList.remove('animate__fadeInUp');
+});
+
+// IntersectionObserver 생성
+const flatformObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            let num = 0.5;
+            flatformCards.forEach((el) => {
+                // 애니메이션 클래스 추가
+                el.classList.add('animate__fadeInUp');
+                // 각 엘리먼트의 animation-delay 설정
+                el.style.setProperty('animation-delay', `${num}s`);
+                num += 0.2;
+            });
+            // 한 번 실행 후 관찰 중지 (필요시)
+            flatformObserver.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.2 // 섹션의 20%가 보이면 실행
+});
+
+// flatform 섹션 관찰 시작
+if (flatformSection) {
+    flatformObserver.observe(flatformSection);
+}
     
 });
