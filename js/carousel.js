@@ -12,8 +12,8 @@ document.addEventListener(`DOMContentLoaded`, function () {
             clickable: true,
         },
         navigation: {
-            nextEl: ".custom-next",
-            prevEl: ".custom-prev",
+            nextEl: ".custom-next.hero",
+            prevEl: ".custom-prev.hero",
         },
 
     });
@@ -184,37 +184,58 @@ document.addEventListener(`DOMContentLoaded`, function () {
     // });
 
     // flatform 섹션 애니메이션
-const flatformSection = document.querySelector('.flatform');
-const flatformCards = document.querySelectorAll('.flatform_card');
+    const flatformSection = document.querySelector('.flatform');
+    const flatformCards = document.querySelectorAll('.flatform_card');
 
-// 초기에는 애니메이션 클래스 제거
-flatformCards.forEach((card) => {
-    card.classList.remove('animate__fadeInUp');
-});
-
-// IntersectionObserver 생성
-const flatformObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            let num = 0.5;
-            flatformCards.forEach((el) => {
-                // 애니메이션 클래스 추가
-                el.classList.add('animate__fadeInUp');
-                // 각 엘리먼트의 animation-delay 설정
-                el.style.setProperty('animation-delay', `${num}s`);
-                num += 0.2;
-            });
-            // 한 번 실행 후 관찰 중지 (필요시)
-            flatformObserver.unobserve(entry.target);
-        }
+    // 초기에는 애니메이션 클래스 제거
+    flatformCards.forEach((card) => {
+        card.classList.remove('animate__fadeInUp');
     });
-}, {
-    threshold: 0.2 // 섹션의 20%가 보이면 실행
-});
 
-// flatform 섹션 관찰 시작
-if (flatformSection) {
-    flatformObserver.observe(flatformSection);
-}
-    
+    // IntersectionObserver 생성
+    const flatformObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                let num = 0.5;
+                flatformCards.forEach((el) => {
+                    // 애니메이션 클래스 추가
+                    el.classList.add('animate__fadeInUp');
+                    // 각 엘리먼트의 animation-delay 설정
+                    el.style.setProperty('animation-delay', `${num}s`);
+                    num += 0.2;
+                });
+                // 한 번 실행 후 관찰 중지 (필요시)
+                flatformObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.2 // 섹션의 20%가 보이면 실행
+    });
+
+    // flatform 섹션 관찰 시작
+    if (flatformSection) {
+        flatformObserver.observe(flatformSection);
+    }
+        
+
+
+    const labelsSwiper = new Swiper('.labels_wrap', {
+        slidesPerView: 4,
+        spaceBetween: 24,
+        centeredSlides: false, // centeredSlides를 false로 변경
+        slidesOffsetBefore: 160, // 시작 위치 오프셋
+        speed: 800,
+        loop: true,     
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.custom-next.labels',
+            prevEl: '.custom-prev.labels',
+        },
+
+        
+    });
+
 });

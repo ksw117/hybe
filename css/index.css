@@ -73,16 +73,12 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 /* arrow */
-.custom-prev {
-    width: 40px; height: 40px; display: block;
-    background-image: url(../images/arrow_left_large.png); background-repeat: no-repeat; background-position: center; background-size: contain;
-    opacity: 1;
+.custom-prev, .custom-next{
+    width: 40px; height: 40px; margin: 0; display: block; opacity: 1;
 }
-.custom-next {
-    width: 40px; height: 40px; display: block;
-    background-image: url(../images/arrow_right_large.png); background-repeat: no-repeat; background-position: center; background-size: contain;
-    opacity: 1;
-}
+.custom-prev{ background-image: url(../images/arrow_left_large.png); background-repeat: no-repeat; background-position: center; background-size: contain;}
+.custom-next{ background-image: url(../images/arrow_right_large.png); background-repeat: no-repeat; background-position: center; background-size: contain;}
+
 
 .swiper-button-prev, .swiper-button-next { color: transparent;}
 .swiper-horizontal {opacity: 1;}
@@ -243,7 +239,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 
 /* 미리보기 상태 (활성 슬라이드가 아닐 때) */
 .swiper-slide:not(.swiper-slide-active).album {
-    transform: scale(0.5); opacity: 0.5; transition: .2s;
+    transform: scale(0.5); opacity: 0.5; transition: 1s;
 }
 .swiper-slide:not(.swiper-slide-active).album .album_img {
     width: 600px; height: 600px;
@@ -254,7 +250,6 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 
 /* 활성 슬라이드 */
 .swiper-slide-active .album { transform: scale(1); opacity: 1;}
-
 .swiper-slide-active .album .album_img { width: 600px; height: 600px;  }
 .swiper-slide-active .btn_wrap { opacity: 1; visibility: visible; }
 
@@ -361,14 +356,15 @@ header .logo { position: absolute; left: 40px; top: 31px;}
     display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: center; gap: 60px;
     padding: 60px 36px; box-sizing: border-box; border-radius: 20px;
     background: linear-gradient(149deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.50) 100%);
-    transition: background 0.8s ease;
     opacity: 0;
+    transition: 1s ease;
 }
 .flatform_card.animate__fadeInUp {
     opacity: 1;
 }
 .flatform_card:hover{
     background: linear-gradient(149deg, #0074E2 0%, #80BAF0 50%, #FFF 100%);
+    transition: 1s ease;
 }
 
 .flatform_card .card_contents{
@@ -392,9 +388,9 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 .flatform_card:last-child .flatform_icon{background: url(../images/platform_04.png) no-repeat 50% 50% / cover;}
 
 /* labels */
-.labels{width: 100%; margin: 120px auto;}
-.labels_wrap{width: 100%;}
-.labels_wrapper{width: 100%; display: flex; flex-wrap: wrap; gap: 24px;}
+.labels{width: 100%; margin: 120px auto; overflow: hidden;}
+.labels_wrap{width: 100%; height: 100%; position: relative; overflow: visible;}
+.labels_wrapper{width: 100%; height: 100%; position: relative;}
 
 .labels_card{
     width: 420px; padding: 24px;
@@ -403,20 +399,23 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 .labels_top{display: flex; flex-wrap: wrap; justify-content: start; align-items: center;gap: 24px;}
 .labels_logo{width: 90px; height: 90px;}
-.labels_card:first-child .labels_top .labels_logo{background: url(../images/label_01.png) no-repeat 50% 50% / cover;}
-.labels_card:nth-child(2) .labels_top .labels_logo{background: url(../images/label_02.png) no-repeat 50% 50% / cover;}
-.labels_card:nth-child(3) .labels_top .labels_logo{background: url(../images/label_03.png) no-repeat 50% 50% / cover;}
-.labels_card:nth-child(4) .labels_top .labels_logo{background: url(../images/label_04.png) no-repeat 50% 50% / cover;}
-.labels_card:nth-child(5) .labels_top .labels_logo{background: url(../images/label_05.png) no-repeat 50% 50% / cover;}
-.labels_card:nth-child(6) .labels_top .labels_logo{background: url(../images/label_06.png) no-repeat 50% 50% / cover;}
-.labels_card:nth-child(7) .labels_top .labels_logo{background: url(../images/label_07.png) no-repeat 50% 50% / cover;}
-.labels_card:nth-child(8) .labels_top .labels_logo{background: url(../images/label_08.png) no-repeat 50% 50% / cover;}
-.labels_card:nth-child(9) .labels_top .labels_logo{background: url(../images/label_09.png) no-repeat 50% 50% / cover;}
-.labels_card:nth-child(10) .labels_top .labels_logo{background: url(../images/label_10.png) no-repeat 50% 50% / cover;}
-.labels_card:nth-child(11) .labels_top .labels_logo{background: url(../images/label_11.png) no-repeat 50% 50% / cover;}
-.labels_card:nth-child(12) .labels_top .labels_logo{background: url(../images/label_12.png) no-repeat 50% 50% / cover;}
-.labels_card:nth-child(13) .labels_top .labels_logo{background: url(../images/label_13.png) no-repeat 50% 50% / cover;}
-.labels_card:last-child .labels_top .labels_logo{background: url(../images/label_14.png) no-repeat 50% 50% / cover;}
+
+.labels_card[data-label="1"] .labels_top .labels_logo{background: url(../images/label_01.png) no-repeat 50% 50% / cover;}
+.labels_card[data-label="2"] .labels_top .labels_logo{background: url(../images/label_02.png) no-repeat 50% 50% / cover;}
+.labels_card[data-label="3"] .labels_top .labels_logo{background: url(../images/label_03.png) no-repeat 50% 50% / cover;}
+.labels_card[data-label="4"] .labels_top .labels_logo{background: url(../images/label_04.png) no-repeat 50% 50% / cover;}
+.labels_card[data-label="5"] .labels_top .labels_logo{background: url(../images/label_05.png) no-repeat 50% 50% / cover;}
+.labels_card[data-label="6"] .labels_top .labels_logo{background: url(../images/label_06.png) no-repeat 50% 50% / cover;}
+.labels_card[data-label="7"] .labels_top .labels_logo{background: url(../images/label_07.png) no-repeat 50% 50% / cover;}
+.labels_card[data-label="8"] .labels_top .labels_logo{background: url(../images/label_08.png) no-repeat 50% 50% / cover;}
+.labels_card[data-label="9"] .labels_top .labels_logo{background: url(../images/label_09.png) no-repeat 50% 50% / cover;}
+.labels_card[data-label="10"] .labels_top .labels_logo{background: url(../images/label_10.png) no-repeat 50% 50% / cover;}
+.labels_card[data-label="11"] .labels_top .labels_logo{background: url(../images/label_11.png) no-repeat 50% 50% / cover;}
+.labels_card[data-label="12"] .labels_top .labels_logo{background: url(../images/label_12.png) no-repeat 50% 50% / cover;}
+.labels_card[data-label="13"] .labels_top .labels_logo{background: url(../images/label_13.png) no-repeat 50% 50% / cover;}
+.labels_card[data-label="14"] .labels_top .labels_logo{background: url(../images/label_14.png) no-repeat 50% 50% / cover;}
+
+
 
 .labels_card .text_wrap{display: flex; flex-wrap: wrap; flex-direction: column; gap: 12px;}
 .labels_card .text_wrap .title_wrap{display: flex; flex-wrap: wrap; flex-direction: column; gap: 2px;}
@@ -431,7 +430,12 @@ header .logo { position: absolute; left: 40px; top: 31px;}
     background: #F9FF65;
 }
 
-.custom-prev.labels{right: 48px;}
-.custom-next.labels{right: 48px;}
-
-
+.custom-prev.labels,
+.custom-next.labels {
+    width: 30px; height: 30px;
+    position: absolute; top: -40px;
+    z-index: 10;
+    cursor: pointer;
+}
+.custom-prev.labels{ left: auto; right: 40px;}
+.custom-next.labels{right: 0;}
