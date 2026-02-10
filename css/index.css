@@ -343,7 +343,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 
 /* flatform */
 .flatform{
-    width: 100%; margin: 120px 0; 
+    width: 1600px; margin: 120px auto; 
     display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: center;
 }
 
@@ -352,20 +352,20 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 .flatform_card{
-    width: 385px; height: 514px;
+    width: 385px; height: 514px; overflow: hidden;
     display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: center; gap: 60px;
     padding: 60px 36px; box-sizing: border-box; border-radius: 20px;
     background: linear-gradient(149deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.50) 100%);
-    opacity: 0;
-    transition: 1s ease;
-}
-.flatform_card.animate__fadeInUp {
     opacity: 1;
 }
+
+/* .flatform_card.animate__fadeInUp {
+    opacity: 1;
+} */
 .flatform_card:hover{
     background: linear-gradient(149deg, #0074E2 0%, #80BAF0 50%, #FFF 100%);
-    transition: 1s ease;
 }
+
 
 .flatform_card .card_contents{
     display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: center; gap: 24px;
@@ -437,5 +437,5 @@ header .logo { position: absolute; left: 40px; top: 31px;}
     z-index: 10;
     cursor: pointer;
 }
-.custom-prev.labels{ left: auto; right: 40px;}
-.custom-next.labels{right: 0;}
+.custom-prev.labels{ left: auto; right: 92px;}
+.custom-next.labels{right: 48px;}
