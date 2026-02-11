@@ -446,7 +446,11 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 .custom-next.labels{right: 48px;}
 
 /* news */
-.news{ width: 95%; margin: 120px auto;}
+.news{ 
+    width: 95%; margin: 120px auto;
+    display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: center;
+}
+
 
 .news_wrap{ width: 100%; display: flex; flex-wrap: wrap; flex-direction: column; align-items: flex-end; gap: 20px;}
 
@@ -462,7 +466,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 .icon_dropdown{
     width: 20px; height: 20px; 
-    background: url(../images/icon_dropdown.png) no-repeat 50% 50% / cover;
+    background: url(../images/icon_arrow_down.png) no-repeat 50% 50% / cover;
 }
 .dropdown_list_wrap{
     width: 144px;
@@ -491,6 +495,37 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 .news_article_wrap{display: flex; flex-wrap: wrap; align-items: center; gap: 120px;}
 .news_article{display: flex;flex-wrap: wrap; flex-direction: column; gap: 6px;}
 
+.news_btn{
+    width: 70px; margin-top: 48px;
+    display: flex; flex-wrap: wrap; color: #FFF;
+    padding-bottom: 2px; border-bottom: 1px solid #FFF; box-sizing: border-box;
+}
+.icon_moreview{width: 16px; height: 16px; background: url(../images/icon_moreview.png) no-repeat 50% 50% / cover;}
 
 
+/* footer */
+footer{ width: 100%; border-top: 1px solid #999; box-sizing: border-box;}
+.footer_wrap{
+    width: 95%; margin: 0 auto;
+    padding-top: 80px; padding-bottom: 160px; box-sizing: border-box;
+    display: flex; flex-wrap: wrap; flex-direction: column; gap: 120px;
+}
 
+.footer_wrap .top{display: flex; flex-wrap: wrap; justify-content: space-between;}
+.footer_wrap .top_gnb{display: flex; flex-wrap: wrap; gap: 80px;}
+.footer_gnb_dropdown{display: flex; flex-wrap: wrap; gap: 4px;}
+
+.footer_wrap .sns{display: flex; flex-wrap: wrap; gap: 20px;}
+.footer_wrap .sns .icon_sns{width: 28px; height: 28px;}
+.footer_wrap .sns .icon_sns:first-child{background: url(../images/icon_sns_01.png) no-repeat 50% 50% / cover;}
+.footer_wrap .sns .icon_sns:nth-child(2){background: url(../images/icon_sns_02.png) no-repeat 50% 50% / cover;}
+.footer_wrap .sns .icon_sns:nth-child(3){background: url(../images/icon_sns_03.png) no-repeat 50% 50% / cover;}
+.footer_wrap .sns .icon_sns:nth-child(4){background: url(../images/icon_sns_04.png) no-repeat 50% 50% / cover;}
+.footer_wrap .sns .icon_sns:nth-child(5){background: url(../images/icon_sns_05.png) no-repeat 50% 50% / cover;}
+.footer_wrap .sns .icon_sns:last-child{background: url(../images/icon_sns_06.png) no-repeat 50% 50% / cover;}
+
+.footer_wrap .btm{display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end;}
+.footer_wrap .btm .hybe_logo{
+    width: 140px; height: 72px;
+    background: url(../images/hybe_logo.png) no-repeat 50% 50% / cover;
+}
