@@ -348,13 +348,14 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 .flatform .flatform_card_wrap{
+    width: 100%;
     display: flex; flex-wrap: wrap; flex-direction: row; gap: 20px;
 }
 
 .flatform_card{
-    width: 385px; height: 514px; position: relative; overflow: hidden;
+    width: calc( (100% - 60px) / 4 ); height: 514px; position: relative; overflow: hidden;
     display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: center; gap: 60px;
-    padding: 60px 36px; box-sizing: border-box; border-radius: 20px;
+    border-radius: 20px;
     background: linear-gradient(149deg, #0074E2 0%, #80BAF0 50%, #FFF 100%);
     transition: 1s ease;
 }
@@ -443,3 +444,53 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 .custom-prev.labels{ left: auto; right: 92px;}
 .custom-next.labels{right: 48px;}
+
+/* news */
+.news{ width: 95%; margin: 120px auto;}
+
+.news_wrap{ width: 100%; display: flex; flex-wrap: wrap; flex-direction: column; align-items: flex-end; gap: 20px;}
+
+.dropdown{
+    width: 144px;
+    display: flex; flex-wrap: wrap; flex-direction: column; justify-content: flex-end;
+    position: relative;
+}
+.drop_btn{
+    border: 0; background: none; color: #FFF;
+    display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px;
+    cursor: pointer;
+}
+.icon_dropdown{
+    width: 20px; height: 20px; 
+    background: url(../images/icon_dropdown.png) no-repeat 50% 50% / cover;
+}
+.dropdown_list_wrap{
+    width: 144px;
+    position: absolute; top: 24px;
+}
+.dropdown_list{ 
+    text-align: center;
+    padding: 8px; border-bottom: 1px solid #000; box-sizing: border-box; 
+    background: #FFF; color: #000;
+    cursor: pointer;
+}
+.dropdown_list.contents_article_small{font-weight: 400; }
+.dropdown_list:hover{background: #F9FF65;}
+
+
+.news_list_wrap{
+    width: 100%; display: flex; flex-wrap: wrap; flex-direction: column;
+    border-top: 3px solid #FFF; border-bottom: 1px solid #BBB;
+    box-sizing: border-box;
+}
+.news_list{
+    width: 100%; padding: 60px 40px; box-sizing: border-box;
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid #BBB; box-sizing: border-box;
+}
+.news_article_wrap{display: flex; flex-wrap: wrap; align-items: center; gap: 120px;}
+.news_article{display: flex;flex-wrap: wrap; flex-direction: column; gap: 6px;}
+
+
+
+

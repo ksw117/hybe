@@ -238,4 +238,28 @@ document.addEventListener(`DOMContentLoaded`, function () {
         
     });
 
+
+    // 드롭다운 토글 기능
+    const dropBtn = document.querySelector('.drop_btn');
+    const dropdownListWrap = document.querySelector('.dropdown_list_wrap');
+
+    // 초기 상태: 드롭다운 숨김
+    dropdownListWrap.style.display = 'none';
+
+    // 버튼 클릭 시 토글
+    dropBtn.addEventListener('click', function() {
+        if (dropdownListWrap.style.display === 'none') {
+            dropdownListWrap.style.display = 'block';
+        } else {
+            dropdownListWrap.style.display = 'none';
+        }
+    });
+
+    // 드롭다운 외부 클릭 시 닫기 (선택사항)
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown')) {
+            dropdownListWrap.style.display = 'none';
+        }
+    });
+
 });
