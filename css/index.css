@@ -514,18 +514,20 @@ footer{ width: 100%; border-top: 1px solid #999; box-sizing: border-box;}
 .footer_wrap .top{display: flex; flex-wrap: wrap; justify-content: space-between;}
 .footer_wrap .top_gnb{display: flex; flex-wrap: wrap; gap: 30px;}
 .footer_wrap .top_gnb a{color: #FFF;}
-.top_gnb .dropdown{display: flex; flex-wrap: wrap; flex-direction: column; cursor: pointer;}
+.top_gnb .dropdown{display: flex; flex-wrap: wrap; flex-direction: column; cursor: pointer; position: relative;}
+.top_gnb .dropdown .drop_btn{position: absolute; top: 0;}
 .top_gnb .dropdown_list_wrap{ 
-    position: absolute; top: 24px;
+    width: 130px;
+    position: absolute; top: 34px;
     display: flex; flex-wrap: wrap; flex-direction: column;
 }
 .top_gnb .dropdown_list{
     text-align: center;
-    padding: 8px; border-bottom: 1px solid #000; box-sizing: border-box; 
+    border-bottom: 1px solid #000; box-sizing: border-box; 
     background: #FFF; color: #000;
     cursor: pointer;
 }
-.top_gnb .dropdown_list .contents_article_small{font-weight: 400; }
+.top_gnb .dropdown_list .contents_article_small{font-weight: 400; color: #000;}
 .top_gnb .dropdown_list:hover{background: #F9FF65;}
 
 

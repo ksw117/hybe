@@ -220,7 +220,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
 
     const labelsSwiper = new Swiper('.labels_wrap', {
-        slidesPerView: 4,
+        slidesPerView: 4.5,
         spaceBetween: 24,
         centeredSlides: false, // centeredSlides를 false로 변경
         slidesOffsetBefore: 160, // 시작 위치 오프셋
@@ -240,8 +240,8 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
 
     // 드롭다운 토글 기능
-    const dropBtn = document.querySelector('.drop_btn');
-    const dropdownListWrap = document.querySelector('.dropdown_list_wrap');
+    const dropBtn = document.querySelectorAll('.drop_btn');
+    const dropdownListWrap = document.querySelectorAll('.dropdown_list_wrap');
 
     // 초기 상태: 드롭다운 숨김
     dropdownListWrap.style.display = 'none';
