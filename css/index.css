@@ -516,7 +516,6 @@ footer{ width: 100%; border-top: 1px solid #999; box-sizing: border-box;}
 .footer_wrap .top_gnb a{color: #FFF;}
 .footer_gnb_dropdown{display: flex; flex-wrap: wrap; gap: 4px; cursor: pointer;}
 
-
 .footer_wrap .sns{display: flex; flex-wrap: wrap; gap: 20px;}
 .footer_wrap .sns .icon_sns{width: 28px; height: 28px;}
 .footer_wrap .sns .icon_sns:first-child{background: url(../images/icon_sns_01.png) no-repeat 50% 50% / cover;}
