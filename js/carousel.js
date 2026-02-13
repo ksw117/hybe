@@ -240,8 +240,8 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
 
     // 드롭다운 토글 기능
-    const dropBtn = document.querySelectorAll('.drop_btn');
-    const dropdownListWrap = document.querySelectorAll('.dropdown_list_wrap');
+    const dropBtn = document.querySelector('.drop_btn');
+    const dropdownListWrap = document.querySelector('.dropdown_list_wrap');
 
     // 초기 상태: 드롭다운 숨김
     dropdownListWrap.style.display = 'none';
@@ -261,5 +261,29 @@ document.addEventListener(`DOMContentLoaded`, function () {
             dropdownListWrap.style.display = 'none';
         }
     });
+
+
+        // 드롭다운 토글 기능
+        const gnbdropBtn = document.querySelector('.top_gnb .dropdown .drop_btn');
+        const gnbdropdownListWrap = document.querySelector('.top_gnb .dropdown .dropdown_list_wrap');
+    
+        // 초기 상태: 드롭다운 숨김
+        gnbdropdownListWrap.style.display = 'none';
+    
+        // 버튼 클릭 시 토글
+        gnbdropBtn.addEventListener('click', function() {
+            if (gnbdropdownListWrap.style.display === 'none') {
+                gnbdropdownListWrap.style.display = 'flex';
+            } else {
+                gnbdropdownListWrap.style.display = 'none';
+            }
+        });
+    
+        // 드롭다운 외부 클릭 시 닫기 (선택사항)
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.top_gnb .dropdown')) {
+                gnbdropdownListWrap.style.display = 'none';
+            }
+        });
 
 });

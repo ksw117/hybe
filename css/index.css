@@ -524,7 +524,7 @@ footer{ width: 100%; border-top: 1px solid #999; box-sizing: border-box;}
 .top_gnb .dropdown_list{
     text-align: center;
     border-bottom: 1px solid #000; box-sizing: border-box; 
-    background: #FFF; color: #000;
+    background: #FFF;
     cursor: pointer;
 }
 .top_gnb .dropdown_list .contents_article_small{font-weight: 400; color: #000;}
