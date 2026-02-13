@@ -513,7 +513,9 @@ footer{ width: 100%; border-top: 1px solid #999; box-sizing: border-box;}
 
 .footer_wrap .top{display: flex; flex-wrap: wrap; justify-content: space-between;}
 .footer_wrap .top_gnb{display: flex; flex-wrap: wrap; gap: 80px;}
-.footer_gnb_dropdown{display: flex; flex-wrap: wrap; gap: 4px;}
+.footer_wrap .top_gnb a{color: #FFF;}
+.footer_gnb_dropdown{display: flex; flex-wrap: wrap; gap: 4px; cursor: pointer;}
+
 
 .footer_wrap .sns{display: flex; flex-wrap: wrap; gap: 20px;}
 .footer_wrap .sns .icon_sns{width: 28px; height: 28px;}
