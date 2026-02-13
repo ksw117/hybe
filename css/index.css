@@ -530,9 +530,6 @@ footer{ width: 100%; border-top: 1px solid #999; box-sizing: border-box;}
 .top_gnb .dropdown_list .contents_article_small{font-weight: 400; color: #000;}
 .top_gnb .dropdown_list:hover{background: #F9FF65;}
 
-
-
-
 .footer_wrap .sns{display: flex; flex-wrap: wrap; gap: 20px;}
 .footer_wrap .sns .icon_sns{width: 28px; height: 28px;}
 .footer_wrap .sns .icon_sns:first-child{background: url(../images/icon_sns_01.png) no-repeat 50% 50% / cover;}
