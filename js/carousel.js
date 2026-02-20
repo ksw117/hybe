@@ -175,48 +175,6 @@ document.addEventListener(`DOMContentLoaded`, function () {
         images[index].classList.add('active');
       });
     });
-    
-    // // let num = 0.5;
-    // // document.querySelectorAll('.flatform_card').forEach((el)=>{
-    // // // 각 엘리먼트의 animation-delay를 0.2
-    // // el.style.setProperty('animation-delay', `${num}s`);
-    // // num += 0.2;
-    // // });
-
-    // // flatform 섹션 애니메이션
-    // const flatformSection = document.querySelector('.flatform');
-    // const flatformCards = document.querySelectorAll('.flatform_card');
-
-    // // 초기에는 애니메이션 클래스 제거
-    // flatformCards.forEach((card) => {
-    //     card.classList.remove('animate__fadeInUp');
-    // });
-
-    // // IntersectionObserver 생성
-    // const flatformObserver = new IntersectionObserver((entries) => {
-    //     entries.forEach((entry) => {
-    //         if (entry.isIntersecting) {
-    //             let num = 0.5;
-    //             flatformCards.forEach((el) => {
-    //                 // 애니메이션 클래스 추가
-    //                 el.classList.add('animate__fadeInUp');
-    //                 // 각 엘리먼트의 animation-delay 설정
-    //                 el.style.setProperty('animation-delay', `${num}s`);
-    //                 num += 0.2;
-    //             });
-    //             // 한 번 실행 후 관찰 중지 (필요시)
-    //             flatformObserver.unobserve(entry.target);
-    //         }
-    //     });
-    // }, {
-    //     threshold: 0.2 // 섹션의 20%가 보이면 실행
-    // });
-
-    // // flatform 섹션 관찰 시작
-    // if (flatformSection) {
-    //     flatformObserver.observe(flatformSection);
-    // }
-        
 
 
     const labelsSwiper = new Swiper('.labels_wrap', {
@@ -264,8 +222,8 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
 
         // 드롭다운 토글 기능
-        const gnbdropBtn = document.querySelector('.top_gnb .dropdown .drop_btn');
-        const gnbdropdownListWrap = document.querySelector('.top_gnb .dropdown .dropdown_list_wrap');
+        const gnbdropBtn = document.querySelector('.footer_gnb .dropdown .drop_btn');
+        const gnbdropdownListWrap = document.querySelector('.footer_gnb .dropdown .dropdown_list_wrap');
     
         // 초기 상태: 드롭다운 숨김
         gnbdropdownListWrap.style.display = 'none';
@@ -281,7 +239,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
     
         // 드롭다운 외부 클릭 시 닫기 (선택사항)
         document.addEventListener('click', function(e) {
-            if (!e.target.closest('.top_gnb .dropdown')) {
+            if (!e.target.closest('.footer_gnb .dropdown')) {
                 gnbdropdownListWrap.style.display = 'none';
             }
         });
