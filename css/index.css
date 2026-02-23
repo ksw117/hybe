@@ -270,10 +270,6 @@ header .logo { position: absolute; left: 40px; top: 31px;}
     margin-top: 80px; margin-bottom: 120px; margin-left: auto; margin-right: auto;
 }
 
-.artist .section_title{
-    font-size: 48px; text-align: left;
-}
-
 .artist_wrap {
     width: 100%; margin: 0 auto;
     display: flex; justify-content: space-between;

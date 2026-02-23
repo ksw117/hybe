@@ -14,7 +14,11 @@
 .contents_article_medium{font-size: 18px; font-weight: 500; letter-spacing: -0.5px; line-height: 150%;}
 .contents_article_large{font-size: 22px; font-weight: 700; letter-spacing: -1px; line-height: 150%;}
 
-
+.artist_title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px; font-weight: 700; letter-spacing: -2px; text-align: left;
+    margin-bottom: 60px;
+}
 
 .btn{
     font-size: 16px; font-weight: 700; letter-spacing: -0.5px; color: #FFF;
