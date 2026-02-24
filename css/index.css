@@ -378,14 +378,11 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 
 .flatform_card:nth-child(2), .flatform_card:last-child{margin-top: 160px;}
 
-.flatform_card:first-child .flatform_logo{width: 229px; height: 33px; background: url(../images/platform_logo_01.png) no-repeat 50% 50% / cover;}
-.flatform_card:first-child .flatform_icon{background: url(../images/platform_01.png) no-repeat 50% 50% / cover;}
-.flatform_card:nth-child(2) .flatform_logo{width: 229px; height: 82px; background: url(../images/platform_logo_02.png) no-repeat 50% 50% / cover;}
-.flatform_card:nth-child(2) .flatform_icon{background: url(../images/platform_02.png) no-repeat 50% 50% / cover;}
-.flatform_card:nth-child(3) .flatform_logo{width: 229px; height: 75px; background: url(../images/platform_logo_03.png) no-repeat 50% 50% / cover;}
-.flatform_card:nth-child(3) .flatform_icon{background: url(../images/platform_03.png) no-repeat 50% 50% / cover;}
-.flatform_card:last-child .flatform_logo{width: 229px; height: 81px; background: url(../images/platform_logo_04.png) no-repeat 50% 50% / cover;}
-.flatform_card:last-child .flatform_icon{background: url(../images/platform_04.png) no-repeat 50% 50% / cover;}
+.flatform_logo{width: 229px;}
+.flatform_card:first-child .flatform_logo{ height: 33px;}
+.flatform_card:nth-child(2) .flatform_logo{ height: 82px;}
+.flatform_card:nth-child(3) .flatform_logo{ height: 75px;}
+.flatform_card:last-child .flatform_logo{ height: 81px;}
 
 /* labels */
 .labels{width: 100%; margin: 120px auto; overflow: hidden;}
