@@ -349,12 +349,14 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 
 .flatform_card{
-    width: calc( (100% - 60px) / 4 ); height: 514px; position: relative; overflow: hidden;
+    width: calc( (100% - 60px) / 4 ); height: 520px; position: relative; overflow: hidden;
     display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: center; gap: 60px;
     border-radius: 20px;
     background: linear-gradient(149deg, #0074E2 0%, #80BAF0 50%, #FFF 100%);
     transition: 1s ease;
 }
+.flatform_card:nth-child(2), .flatform_card:nth-child(3), .flatform_card:last-child{gap: 40px;}
+
 
 .card_contents_bg { 
     width: 100%; height: 100%; transition: .3s;
@@ -376,13 +378,13 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 
 .flatform_card:nth-child(2), .flatform_card:last-child{margin-top: 160px;}
 
-.flatform_card:first-child .flatform_logo{width: 239px; height: 33px; background: url(../images/platform_logo_01.png) no-repeat 50% 50% / cover;}
+.flatform_card:first-child .flatform_logo{width: 229px; height: 33px; background: url(../images/platform_logo_01.png) no-repeat 50% 50% / cover;}
 .flatform_card:first-child .flatform_icon{background: url(../images/platform_01.png) no-repeat 50% 50% / cover;}
-.flatform_card:nth-child(2) .flatform_logo{width: 300px; height: 46px; background: url(../images/platform_logo_02.png) no-repeat 50% 50% / cover;}
+.flatform_card:nth-child(2) .flatform_logo{width: 229px; height: 82px; background: url(../images/platform_logo_02.png) no-repeat 50% 50% / cover;}
 .flatform_card:nth-child(2) .flatform_icon{background: url(../images/platform_02.png) no-repeat 50% 50% / cover;}
-.flatform_card:nth-child(3) .flatform_logo{width: 316px; height: 34px; background: url(../images/platform_logo_03.png) no-repeat 50% 50% / cover;}
+.flatform_card:nth-child(3) .flatform_logo{width: 229px; height: 75px; background: url(../images/platform_logo_03.png) no-repeat 50% 50% / cover;}
 .flatform_card:nth-child(3) .flatform_icon{background: url(../images/platform_03.png) no-repeat 50% 50% / cover;}
-.flatform_card:last-child .flatform_logo{width: 313px; height: 36px; background: url(../images/platform_logo_04.png) no-repeat 50% 50% / cover;}
+.flatform_card:last-child .flatform_logo{width: 229px; height: 81px; background: url(../images/platform_logo_04.png) no-repeat 50% 50% / cover;}
 .flatform_card:last-child .flatform_icon{background: url(../images/platform_04.png) no-repeat 50% 50% / cover;}
 
 /* labels */
@@ -492,6 +494,21 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 .news_list .contents_title_small, 
 .news_list .contents_article_small{ width: 153px; text-align: center;}
 .news_article{ flex: 1; padding-left: 40px;  display: flex; flex-wrap: wrap; flex-direction: column; gap: 6px;}
+.news_article .contents_title_medium, .news_article .contents_article_medium{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.news_article .contents_title_medium{
+    -webkit-line-clamp: 1;
+}
+.news_article .contents_article_medium{ 
+    -webkit-line-clamp: 2;
+}
 
 .news_btn{
     width: 70px; margin-top: 48px;
@@ -503,8 +520,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 
 /* footer */
 footer{
-    width: 100%; border-top: 1px solid #999; box-sizing: border-box;
-    margin: 0 auto; padding: 80px 2.5% 160px 2.5%;
+    width: 100%; border-top: 1px solid #999; padding: 80px 2.5% 160px 2.5%; box-sizing: border-box;
     display: flex; flex-wrap: wrap; flex-direction: column; gap: 120px;
 }
 
