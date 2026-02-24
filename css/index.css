@@ -415,8 +415,6 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 .labels_card[data-label="13"] .labels_top .labels_logo{background: url(../images/label_13.png) no-repeat 50% 50% / cover;}
 .labels_card[data-label="14"] .labels_top .labels_logo{background: url(../images/label_14.png) no-repeat 50% 50% / cover;}
 
-
-
 .labels_card .text_wrap{display: flex; flex-wrap: wrap; flex-direction: column; gap: 8px;}
 .labels_card .text_wrap .title_wrap{display: flex; flex-wrap: wrap; flex-direction: column; gap: 2px;}
 .labels_card .text_wrap .title_wrap .contents_article_small,
@@ -517,7 +515,6 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 }
 .icon_moreview{width: 16px; height: 16px; background: url(../images/icon_moreview.png) no-repeat 50% 50% / cover;}
 
-
 /* footer */
 footer{
     width: 100%; border-top: 1px solid #999; padding: 80px 2.5% 160px 2.5%; box-sizing: border-box;
@@ -527,7 +524,7 @@ footer{
 footer .top{display: flex; flex-wrap: wrap; justify-content: space-between;}
 .footer_gnb ul { display: flex; flex-wrap: wrap; gap: 30px;}
 .footer_gnb ul li a {color: #FFF;}
-.footer_gnb .dropdown{ width: 132px; display: flex; flex-wrap: wrap; flex-direction: column; cursor: pointer; position: relative;}
+.footer_gnb .dropdown{ width: 132px; display: flex; flex-wrap: wrap; cursor: pointer; position: relative;}
 .footer_gnb .dropdown .drop_btn{position: absolute; top: 0;}
 .footer_gnb .dropdown_list_wrap{ 
     width: 130px;
@@ -542,9 +539,6 @@ footer .top{display: flex; flex-wrap: wrap; justify-content: space-between;}
 }
 .footer_gnb .dropdown_list .contents_article_small{font-weight: 400; color: #000;}
 .footer_gnb .dropdown_list:hover{background: #F9FF65;}
-
-
-
 
 footer .sns{display: flex; flex-wrap: wrap; gap: 20px;}
 footer .sns .icon_sns{width: 28px; height: 28px;}
