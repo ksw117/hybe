@@ -79,10 +79,20 @@
 /* ci */
 .ci{
     width: 95%; margin: 0 auto; padding: 160px 0;
-    display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: center; gap: 80px;
+    display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: center;
 }
-.ci .ci_top{display: flex; flex-wrap: wrap; flex-direction: column; gap: 24px;}
-.ci .ci_top video{width: 1280px;}
+.ci .ci_contents{
+    width: 100%;
+    display: flex; flex-wrap: wrap; flex-direction: column; align-items: center;
+    gap: 80px;
+}
+.ci .ci_top{ 
+    width: 66.7%; 
+    display: flex; flex-wrap: wrap; flex-direction: column; 
+    justify-content: center; align-items: flex-start; align-content: center;
+    gap: 24px;
+}
+.ci .ci_top video{width: 100%;}
 
 .ci .ci_btm{
     width: 100%; display: flex; flex-wrap: wrap; flex-direction: column; gap: 60px;

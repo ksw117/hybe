@@ -197,51 +197,42 @@ document.addEventListener(`DOMContentLoaded`, function () {
     });
 
 
-    // 드롭다운 토글 기능
-    const dropBtn = document.querySelector('.drop_btn');
-    const dropdownListWrap = document.querySelector('.dropdown_list_wrap');
+    // 드롭다운 토글 기능 (모든 dropdown 공통 처리)
+const allDropdowns = document.querySelectorAll('.dropdown');
+
+allDropdowns.forEach(dropdown => {
+    const dropBtn = dropdown.querySelector('.drop_btn');
+    const dropdownListWrap = dropdown.querySelector('.dropdown_list_wrap');
+
+    if (!dropBtn || !dropdownListWrap) return;
 
     // 초기 상태: 드롭다운 숨김
     dropdownListWrap.style.display = 'none';
 
     // 버튼 클릭 시 토글
-    dropBtn.addEventListener('click', function() {
-        if (dropdownListWrap.style.display === 'none') {
-            dropdownListWrap.style.display = 'block';
-        } else {
-            dropdownListWrap.style.display = 'none';
-        }
-    });
+    dropBtn.addEventListener('click', function(e) {
+        e.stopPropagation(); // 외부 클릭 이벤트와 충돌 방지
 
-    // 드롭다운 외부 클릭 시 닫기 (선택사항)
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.dropdown')) {
-            dropdownListWrap.style.display = 'none';
-        }
-    });
-
-
-        // 드롭다운 토글 기능
-        const gnbdropBtn = document.querySelector('.footer_gnb .dropdown .drop_btn');
-        const gnbdropdownListWrap = document.querySelector('.footer_gnb .dropdown .dropdown_list_wrap');
-    
-        // 초기 상태: 드롭다운 숨김
-        gnbdropdownListWrap.style.display = 'none';
-    
-        // 버튼 클릭 시 토글
-        gnbdropBtn.addEventListener('click', function() {
-            if (gnbdropdownListWrap.style.display === 'none') {
-                gnbdropdownListWrap.style.display = 'flex';
-            } else {
-                gnbdropdownListWrap.style.display = 'none';
+        // 다른 드롭다운 모두 닫기
+        allDropdowns.forEach(other => {
+            if (other !== dropdown) {
+                const otherList = other.querySelector('.dropdown_list_wrap');
+                if (otherList) otherList.style.display = 'none';
             }
         });
-    
-        // 드롭다운 외부 클릭 시 닫기 (선택사항)
-        document.addEventListener('click', function(e) {
-            if (!e.target.closest('.footer_gnb .dropdown')) {
-                gnbdropdownListWrap.style.display = 'none';
-            }
-        });
+
+        // 현재 드롭다운 토글
+        dropdownListWrap.style.display =
+            dropdownListWrap.style.display === 'none' ? 'flex' : 'none';
+    });
+});
+
+// 드롭다운 외부 클릭 시 모두 닫기
+document.addEventListener('click', function() {
+    allDropdowns.forEach(dropdown => {
+        const dropdownListWrap = dropdown.querySelector('.dropdown_list_wrap');
+        if (dropdownListWrap) dropdownListWrap.style.display = 'none';
+    });
+});
 
 });
