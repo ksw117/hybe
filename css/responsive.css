@@ -1,0 +1,15 @@
+/* 모든 페이지 공통 반응형 영역(header / footer) */
+@media screen and (max-width:1440px) {}
+
+@media screen and (max-width:1280px) {
+    header .gnb{display: none;}
+    .icon_lang{display: none;}
+}
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:600px) {}
+
+@media screen and (max-width:480px) {}

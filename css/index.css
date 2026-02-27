@@ -53,24 +53,21 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 .hero_01 {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.30) 100%), url(../images/hero_01.jpg) lightgray no-repeat 50% 50% / cover;
 }
-.hero_logo_01 {
-    width: 246px; height: 80px;
-    background: url(../images/hero_logo_01.png) no-repeat 50% 50% / cover;
-}
 .hero_02 {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.30) 100%), url(../images/hero_02.jpg) lightgray no-repeat 50% 50% / cover;
-}
-.hero_logo_02 {
-    width: 110px; height: 120px;
-    background: url(../images/hero_logo_02.png) no-repeat 50% 50% / cover;
 }
 .hero_03 {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.30) 100%), url(../images/hero_03.jpg) lightgray no-repeat 50% 50% / cover;
 }
+/* .hero_logo_01 {
+    width: 246px; height: 80px;
+}
+.hero_logo_02 {
+    width: 110px; height: 120px;
+}
 .hero_logo_03 {
     width: 250px; height: 100px;
-    background: url(../images/hero_logo_03.png) no-repeat 50% 50% / cover;
-}
+} */
 
 /* arrow */
 .custom-prev, .custom-next{

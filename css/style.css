@@ -34,3 +34,20 @@
 .btn div{
     width: 20px; height: 20px;
 }
+
+
+@media screen and (max-width:1440px) {}
+
+@media screen and (max-width:1280px) {}
+
+@media screen and (max-width:1024px) {
+    .contents_article_large { font-size: 20px; letter-spacing: -0.4px; }
+}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:600px) {
+    .contents_article_large { font-size: 18px; letter-spacing: -0.3px; }
+}
+
+@media screen and (max-width:480px) {}
