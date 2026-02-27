@@ -117,7 +117,7 @@
 }
 .primary_wrap{display: flex;flex-wrap: wrap;}
 .primary_wrap .primary{width: 33.3%; height: 120px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
-.primary_wrap .primary:first-child{background: #000;}
+.primary_wrap .primary:first-child{background: #000; border: 1px solid #999; box-sizing: border-box;}
 .primary_wrap .primary:nth-child(2){background: #FFF; p{color: #000;}}
 .primary_wrap .primary:last-child{background: #999;p{color: #000;}}
 
