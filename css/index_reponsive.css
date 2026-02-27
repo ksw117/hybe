@@ -6,8 +6,32 @@
 
 @media screen and (max-width:768px) {}
 
-@media screen and (max-width:600px) {}
+@media screen and (max-width:600px) {
+
+}
 
 @media screen and (max-width:480px) {
     /* hero */
+    .hero_wrap {
+        height: 90vh;
+    }
+    .hero .hero_title_wrap img{scale: .6;}
+    .hero_title_wrap {
+        padding: 0 20px; box-sizing: border-box;
+        gap: 8px;
+        margin-bottom: 80px;
+    }
+    .hero .hero_title_wrap img{scale: .6;}
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: var(--swiper-pagination-bottom, 24px);
+    }
+    /* 
+    .hero_01 {background-position: 28% 50%;}
+    .hero_02 {background-position: 30% 50%;}
+    .hero_03 {background-position: 40% 50%;}
+    */
 }
