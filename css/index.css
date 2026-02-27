@@ -517,7 +517,6 @@ footer .top{display: flex; flex-wrap: wrap; justify-content: space-between;}
 .footer_gnb ul { display: flex; flex-wrap: wrap; gap: 30px;}
 .footer_gnb ul li a {color: #FFF;}
 .footer_gnb .footer_dropdown{
-    width: 132px;
     display: flex; flex-wrap: wrap; align-items: flex-start;
     position: relative;
 }
