@@ -22,7 +22,7 @@
     /* hero */
     .hero .hero_title_wrap img{scale: .6;}
     .hero_title_wrap {
-        gap: 8px;
+        gap: 4px;
         margin-bottom: 72px;
     }
     .hero .hero_title_wrap img{scale: .6;}
@@ -31,9 +31,4 @@
     .swiper-pagination-bullets.swiper-pagination-horizontal,
     .swiper-pagination-custom,
     .swiper-pagination-fraction { bottom: var(--swiper-pagination-bottom, 24px); }
-    /* 
-    .hero_01 {background-position: 28% 50%;}
-    .hero_02 {background-position: 30% 50%;}
-    .hero_03 {background-position: 40% 50%;}
-    */
 }
