@@ -2,20 +2,26 @@
 
 @media screen and (max-width:1280px) {}
 
-@media screen and (max-width:1024px) {}
+@media screen and (max-width:1024px) {
+    .hero .hero_title_wrap img{scale: .8;}
+    .hero_title_wrap {
+        gap: 24px;
+        margin-bottom: 72px;
+    }
+}
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+
+}
 
 @media screen and (max-width:600px) {
-
+    .hero_wrap {height: 90vh;}
 }
 
 @media screen and (max-width:480px) {
     /* hero */
-    .hero_wrap {height: 90vh;}
     .hero .hero_title_wrap img{scale: .6;}
     .hero_title_wrap {
-        padding: 0 20px; box-sizing: border-box;
         gap: 8px;
         margin-bottom: 72px;
     }

@@ -44,6 +44,7 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 .hero_title_wrap {
     display: flex; flex-wrap: wrap; flex-direction: column; align-items: center; gap: 32px;
     margin-bottom: 110px;
+    padding: 0 20px; box-sizing: border-box;
 }
 .hero_title_wrap .contents_article_large {
     text-align: center;
@@ -62,10 +63,6 @@ header .logo { position: absolute; left: 40px; top: 31px;}
 .hero_01 {background-position: 30% 50%;}
 .hero_02 {background-position: 30% 50%;}
 .hero_03 {background-position: 40% 50%;}
-
-.hero_logo_01 {width: 246px; height: 80px;}
-.hero_logo_02 {width: 110px; height: 120px;}
-.hero_logo_03 {width: 250px; height: 100px;}
 
 /* arrow */
 .custom-prev, .custom-next{
