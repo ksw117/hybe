@@ -51,5 +51,5 @@
 }
 
 @media screen and (max-width:480px) {
-    .contents_article_large { font-size: 16px; font-weight: 500; letter-spacing: -0.5px; line-height: 130% ;}
+    .contents_article_large { font-size: 16px; font-weight: 600; letter-spacing: -0.5px; line-height: 130% ;}
 }
