@@ -292,8 +292,6 @@ header .logo { position: absolute; left: 40px; top: 50%; transform: translateY(-
 .custom-prev.album { top: 43%; left: 30%; transform: translateY(-50%);}
 .custom-next.album { top: 43%; right: 30%; transform: translateY(-50%);}
 
-
-
 /* artist */
 .artist{
     width: 95%;
