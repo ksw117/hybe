@@ -31,7 +31,7 @@ header .logo { position: absolute; left: 40px; top: 50%; transform: translateY(-
 }
 
 .menu-trigger {
-    position: absolute; top: 50%; right: 40px; transform: translateY(-42%);
+    position: absolute; top: 50%; right: 40px; transform: translateY(-50%);
     width: 24px; height: 20px;
 }
 .menu-trigger,
@@ -49,7 +49,7 @@ header .logo { position: absolute; left: 40px; top: 50%; transform: translateY(-
 .menu-trigger span:nth-of-type(3) { bottom: 0;}
 
 .menu-trigger.active span:nth-of-type(1) {
-    -webkit-transform: translateY (9px) rotate (-45deg);
+    -webkit-transform: translateY(9px) rotate(-45deg);
     transform: translateY(9px) rotate(-45deg);
 }
 .menu-trigger.active span:nth-of-type(2) {opacity: 0;}
@@ -582,5 +582,5 @@ footer .btm .hybe_logo{
 }
 
 
-section { display: none; }
+section, .flatform, .news { display: none; }
 footer { display: none; }
