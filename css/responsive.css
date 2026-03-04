@@ -16,9 +16,9 @@
 
 @media screen and (max-width:480px) {
     header{width: 85%; height: 60px; top: 32px;}
-    header .logo{ left: 32px; width: 72px; margin-top: -7px;}
+    header .logo{ left: 28px; width: 72px; margin-top: -7px;}
     .menu-trigger{
-        right: 32px;
+        right: 28px;
         width: 20px; height: 14px;
         margin-top: -7px;
     }
