@@ -19,7 +19,7 @@
     /* hero */
     .hero_title_wrap {
         gap: 24px;
-        margin-bottom: 160px;
+        margin-bottom: 120px;
     }
     .hero_title_wrap .contents_article_large br{display: none;}
     .hero_01 img{ width: 50%; height: auto; }
