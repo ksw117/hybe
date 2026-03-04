@@ -5,7 +5,6 @@
 @media screen and (max-width:1024px) {
     .hero_title_wrap {
         gap: 24px;
-        margin-bottom: 72px;
     }
 }
 
@@ -17,6 +16,14 @@
 
 @media screen and (max-width:600px) {
     .hero_wrap {height: 90vh;}
+    .hero_title_wrap {
+        margin-bottom: 72px;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction { bottom: var(--swiper-pagination-bottom, 32px); }
+
 }
 
 @media screen and (max-width:480px) {
@@ -29,8 +36,4 @@
     .hero_02 img{ width: 30%; height: auto; }
     .hero_03 img{ width: 50%; height: auto; }
 
-    .swiper-horizontal>.swiper-pagination-bullets,
-    .swiper-pagination-bullets.swiper-pagination-horizontal,
-    .swiper-pagination-custom,
-    .swiper-pagination-fraction { bottom: var(--swiper-pagination-bottom, 24px); }
 }
