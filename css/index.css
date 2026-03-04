@@ -1,6 +1,6 @@
 /* header */
 header {
-    max-width: 1785.6px;  margin: 0 auto;
+    max-width: 1786px;  margin: 0 auto;
     width: 93%; height: 80px; position: absolute; top: 54px; left: 50%; transform: translateX(-50%); z-index: 999;
 
     /* glass */
@@ -12,7 +12,7 @@ header {
     box-shadow: 0px 8px 10px rgba(31, 38, 135, 0), inset 0 4px 8px -2px rgba(255, 255, 255, 0.3);
 }
 
-header .logo { position: absolute; left: 40px; top: 50%; transform: translateY(-20%);}
+header .logo { position: absolute; left: 40px; top: 50%; font-size: 0; margin-top: -9px;}
 
 .gnb {position: absolute; top: 0; left: 50%; margin-left: -420px;}
 .gnb ul { display: flex; flex-wrap: wrap;}
@@ -31,8 +31,8 @@ header .logo { position: absolute; left: 40px; top: 50%; transform: translateY(-
 }
 
 .menu-trigger {
-    position: absolute; top: 50%; right: 40px; transform: translateY(-50%);
-    width: 24px; height: 20px;
+    position: absolute; top: 50%; right: 40px; margin-top: -9px;
+    width: 24px; height: 18px;
 }
 .menu-trigger,
 .menu-trigger span {
@@ -45,17 +45,17 @@ header .logo { position: absolute; left: 40px; top: 50%; transform: translateY(-
   border-radius: 2px; background-color: #fff;
 }
 .menu-trigger span:nth-of-type(1) { top: 0;}
-.menu-trigger span:nth-of-type(2) { top: 9px;}
+.menu-trigger span:nth-of-type(2) { top: 8px;}
 .menu-trigger span:nth-of-type(3) { bottom: 0;}
 
 .menu-trigger.active span:nth-of-type(1) {
-    -webkit-transform: translateY(9px) rotate(-45deg);
-    transform: translateY(9px) rotate(-45deg);
+    -webkit-transform: translateY(8px) rotate(-45deg);
+    transform: translateY(8px) rotate(-45deg);
 }
 .menu-trigger.active span:nth-of-type(2) {opacity: 0;}
 .menu-trigger.active span:nth-of-type(3) {
-  -webkit-transform: translateY(-9px) rotate(45deg);
-  transform: translateY(-9px) rotate(45deg);
+  -webkit-transform: translateY(-8px) rotate(45deg);
+  transform: translateY(-8px) rotate(45deg);
 }
 
 .menu-trigger{display: none;}

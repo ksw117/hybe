@@ -16,24 +16,20 @@
 
 @media screen and (max-width:480px) {
     header{width: 85%; height: 60px; top: 32px;}
-    header .logo{ left: 32px;}
+    header .logo{ left: 32px; width: 72px; margin-top: -7px;}
     .menu-trigger{
         right: 32px;
-        width: 20px; height: 16px;
+        width: 20px; height: 14px;
+        margin-top: -7px;
     }
-    .menu-trigger,
-    .menu-trigger span {
-      display: inline-block; box-sizing: border-box;
-      transition: all .4s;
-    }
-    .menu-trigger span:nth-of-type(2) { top: 7px;}
+    .menu-trigger span:nth-of-type(2) { top: 6px;}
     .menu-trigger.active span:nth-of-type(1) {
-        -webkit-transform: translateY(7px) rotate(-45deg);
-        transform: translateY(7px) rotate(-45deg);
+        -webkit-transform: translateY(6px) rotate(-45deg);
+        transform: translateY(6px) rotate(-45deg);
     }
     .menu-trigger.active span:nth-of-type(2) {opacity: 0;}
     .menu-trigger.active span:nth-of-type(3) {
-      -webkit-transform: translateY(-7px) rotate(45deg);
-      transform: translateY(-7px) rotate(45deg);
+      -webkit-transform: translateY(-6px) rotate(45deg);
+      transform: translateY(-6px) rotate(45deg);
     }
 }
