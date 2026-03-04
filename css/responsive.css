@@ -15,7 +15,7 @@
 @media screen and (max-width:600px) {}
 
 @media screen and (max-width:480px) {
-    header{width: 85%; height: 60px; top: 24px;}
+    header{width: 85%; height: 60px; top: 32px;}
     header .logo{ left: 32px;}
     .menu-trigger{
         right: 32px;
