@@ -5,5 +5,19 @@ $(document).ready(function() {
         $('header').stop().animate({'background-color' : 'rgba(255, 255, 255, 0.1)'}, 200);
     });
 
+
+    var burger = $('.menu-trigger');
+
+    burger.each(function(index){
+      var $this = $(this);
+    
+      $this.on('click', function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+      })
+    });
+
 });
+
+
 

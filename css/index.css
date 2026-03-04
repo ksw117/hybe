@@ -12,7 +12,7 @@ header {
     box-shadow: 0px 8px 10px rgba(31, 38, 135, 0), inset 0 4px 8px -2px rgba(255, 255, 255, 0.3);
 }
 
-header .logo { position: absolute; left: 40px; top: 31px;}
+header .logo { position: absolute; left: 40px; top: 50%; transform: translateY(-20%);}
 
 .gnb {position: absolute; top: 0; left: 50%; margin-left: -420px;}
 .gnb ul { display: flex; flex-wrap: wrap;}
@@ -30,6 +30,35 @@ header .logo { position: absolute; left: 40px; top: 31px;}
     background: url(../images/icon_lang.png) no-repeat 50% 50% / cover;
 }
 
+.menu-trigger {
+    position: absolute; top: 50%; right: 40px; transform: translateY(-42%);
+    width: 24px; height: 20px;
+}
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block; box-sizing: border-box;
+  transition: all .4s;
+}
+.menu-trigger span {
+  position: absolute; left: 0;
+  width: 100%; height: 2px;
+  border-radius: 2px; background-color: #fff;
+}
+.menu-trigger span:nth-of-type(1) { top: 0;}
+.menu-trigger span:nth-of-type(2) { top: 9px;}
+.menu-trigger span:nth-of-type(3) { bottom: 0;}
+
+.menu-trigger.active span:nth-of-type(1) {
+    -webkit-transform: translateY (9px) rotate (-45deg);
+    transform: translateY(9px) rotate(-45deg);
+}
+.menu-trigger.active span:nth-of-type(2) {opacity: 0;}
+.menu-trigger.active span:nth-of-type(3) {
+  -webkit-transform: translateY(-9px) rotate(45deg);
+  transform: translateY(-9px) rotate(45deg);
+}
+
+.menu-trigger{display: none;}
 /* hero */
 .hero_wrap {
     width: 100%; height: 100vh; margin: 0 auto; display: flex; flex-wrap: wrap;
@@ -551,3 +580,7 @@ footer .btm .hybe_logo{
     width: 140px; height: 72px;
     background: url(../images/hybe_logo.png) no-repeat 50% 50% / cover;
 }
+
+
+section { display: none; }
+footer { display: none; }

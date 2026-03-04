@@ -4,6 +4,8 @@
 @media screen and (max-width:1280px) {
     header .gnb{display: none;}
     .icon_lang{display: none;}
+
+    .menu-trigger{display: inline-block;}
 }
 
 @media screen and (max-width:1024px) {}
@@ -12,4 +14,9 @@
 
 @media screen and (max-width:600px) {}
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    header{width: 85%; height: 60px;}
+    header .logo{ left: 32px;}
+    header .menu-trigger{right: 32px;}
+    
+}

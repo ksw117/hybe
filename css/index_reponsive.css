@@ -29,9 +29,10 @@
 @media screen and (max-width:480px) {
     /* hero */
     .hero_title_wrap {
-        gap: 12px;
-        margin-bottom: 72px;
+        gap: 24px;
+        margin-bottom: 80px;
     }
+    .hero_title_wrap .contents_article_large br{display: none;}
     .hero_01 img{ width: 50%; height: auto; }
     .hero_02 img{ width: 30%; height: auto; }
     .hero_03 img{ width: 50%; height: auto; }
