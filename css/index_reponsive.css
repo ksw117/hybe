@@ -18,6 +18,8 @@
     .swiper-slide:not(.swiper-slide-active).album .album_img {
         width: 480px; height: 480px;
     }
+    .custom-next.album{right: 24%;}
+    .custom-prev.album{left: 24%;}
 }
 
 @media screen and (max-width:1024px) {
@@ -37,11 +39,10 @@
     .swiper-slide:not(.swiper-slide-active).album .album_img {
         width: 420px; height: 420px;
     }
-    .custom-next.album{right: 16%;}
-    .custom-prev.album{left: 16%;}
-
     .btn_wrap{gap: 16px;}
 
+    .custom-next.album{right: 22%;}
+    .custom-prev.album{left: 22%;}
 }
 
 @media screen and (max-width:768px) {
@@ -61,7 +62,14 @@
     .swiper-slide:not(.swiper-slide-active).album .album_img {
         width: 360px; height: 360px;
     }
-
+    /* scale 제거 */
+    .swiper-slide:not(.swiper-slide-active).album {
+        transform: scale(1);
+        opacity: 0;
+    }
+    .custom-prev.album, .custom-next.album{top: 40%;}
+    .custom-next.album{right: 16%;}
+    .custom-prev.album{left: 16%;}
 }
 
 @media screen and (max-width:600px) {
@@ -74,12 +82,9 @@
     .swiper-slide:not(.swiper-slide-active).album .album_img {
         width: 320px; height: 320px;
     }
-    /* scale 제거 */
-    .swiper-slide:not(.swiper-slide-active).album {
-        transform: scale(1);
-        opacity: 0;
-    }
+
     .btn_wrap{gap: 12px;}
+
     .custom-next.album{right: 8%;}
     .custom-prev.album{left: 8%;}
 
@@ -126,6 +131,4 @@
         width: 256px; height: 256px;
     }
     .btn_wrap{gap: 8px;}
-    .custom-prev.album, .custom-next.album{top: 40%;}
-
 }
