@@ -1,6 +1,6 @@
 .contents_title_small{font-size: 16px; font-weight: 700; letter-spacing: -0.5px;}
 .contents_title_medium{font-size: 20px; font-weight: 700; letter-spacing: -1px;}
-.contents_title_large{font-size: 28px; font-weight: 700; letter-spacing: -2px;}
+.contents_title_large{font-size: 28px; font-weight: 700; letter-spacing: -1.5px;}
 
 .contents_article_xsmall{font-size: 14px; font-weight: 300; letter-spacing: -1px; line-height: 130%;}
 .contents_article_small{font-size: 16px; font-weight: 500; letter-spacing: -1px;}
@@ -36,30 +36,47 @@
 }
 
 
-@media screen and (max-width:1440px) {}
+@media screen and (max-width:1440px) {
+    .section_title{font-size: 34px;}
+}
 
 @media screen and (max-width:1280px) {
+    .contents_title_large{font-size: 26px;}
     .contents_article_large { font-size: 20px;}
+
+    .section_title{font-size: 32px;}
+
 }
 
 @media screen and (max-width:1024px) {
+    .contents_title_large{font-size: 24px;}
+
+    .section_title{font-size: 30px;}
+
 }
 
 @media screen and (max-width:768px) {
+    .contents_title_large{font-size: 22px;}
     .contents_article_large { font-size: 18px; letter-spacing: -0.8px; line-height: 140% ;}
+
+    .section_title{font-size: 28px;}
+
 }
 
 @media screen and (max-width:600px) {
+    .contents_title_large{font-size: 20px;  letter-spacing: -1px; }
+
+    .section_title{font-size: 26px; margin-bottom: 20px;}
 
 }
 
 @media screen and (max-width:480px) {
-    .contents_title_large{font-size: 18px; letter-spacing: -1px; text-align: center;}
+    .contents_title_large{font-size: 18px;text-align: center;}
 
     .contents_article_large { font-size: 16px; font-weight: 600; letter-spacing: -0.5px; line-height: 130% ;}
 
 
-    .section_title{font-size: 24px; margin-bottom: 20px;}
+    .section_title{font-size: 24px; margin-bottom: 40px;}
 
     .btn{ font-size: 12px; padding: 8px 18px 8px 15px;}
 }
