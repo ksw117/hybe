@@ -118,5 +118,5 @@
         transform: scale(1);
         opacity: 0;
     } */
-    .btn_wrap{gap: 8px;}
+    .btn_wrap{gap: 8px; justify-content: center;}
 }
