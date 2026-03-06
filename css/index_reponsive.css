@@ -1,6 +1,22 @@
-@media screen and (max-width:1440px) {}
+@media screen and (max-width:1440px) {
+    /* release */
+    .album .album_img {
+        width: 540px; height: 540px;
+    }
+    .swiper-slide:not(.swiper-slide-active).album .album_img {
+        width: 540px; height: 540px;
+    }
+}
 
-@media screen and (max-width:1280px) {}
+@media screen and (max-width:1280px) {
+    /* release */
+    .album .album_img {
+        width: 480px; height: 480px;
+    }
+    .swiper-slide:not(.swiper-slide-active).album .album_img {
+        width: 480px; height: 480px;
+    }
+}
 
 @media screen and (max-width:1024px) {
     /* multimedia */
@@ -11,6 +27,14 @@
     }
     .custom-prev.multi {left: 8%;}
     .custom-next.multi{right: 8%;}
+
+    /* release */
+    .album .album_img {
+        width: 420px; height: 420px;
+    }
+    .swiper-slide:not(.swiper-slide-active).album .album_img {
+        width: 420px; height: 420px;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -25,16 +49,14 @@
 
     /* release */
     .album .album_img {
-        width: 480px; height: 480px;
+        width: 360px; height: 360px;
     }
     .swiper-slide:not(.swiper-slide-active).album .album_img {
-        width: 480px; height: 480px;
+        width: 360px; height: 360px;
     }
-    /* scale 제거 */
-    .swiper-slide:not(.swiper-slide-active).album {
-        transform: scale(1);
-        opacity: 0;
-    }
+
+    .custom-next.album{right: 2%;}
+    .custom-prev.album{left: 2%;}
 
 }
 
@@ -43,10 +65,22 @@
 
     /* release */
     .album .album_img {
-        width: 360px; height: 360px;
+        width: 320px; height: 320px;
     }
     .swiper-slide:not(.swiper-slide-active).album .album_img {
-        width: 360px; height: 360px;
+        width: 320px; height: 320px;
+    }
+    /* scale 제거 */
+    .swiper-slide:not(.swiper-slide-active).album {
+        transform: scale(1);
+        opacity: 0;
+    }
+    .custom-next.album{right: 8%;}
+    .custom-prev.album{left: 8%;}
+
+    .release_wrapper .swiper-slide{
+        display:flex;
+        justify-content:center;
     }
 }
 
@@ -83,11 +117,15 @@
     }
 
     /* release */
+    .release{padding: 80px 0;}
     .album .album_img {
-        width: 280px; height: 280px;
+        width: 256px; height: 256px;
     }
     .swiper-slide:not(.swiper-slide-active).album .album_img {
-        width: 280px; height: 280px;
+        width: 256px; height: 256px;
     }
     .btn_wrap{gap: 8px;}
+
+    .custom-prev.album, .custom-next.album{top: 40%;}
+
 }
