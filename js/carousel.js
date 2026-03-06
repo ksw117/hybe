@@ -128,6 +128,16 @@ document.addEventListener(`DOMContentLoaded`, function () {
             prevEl: '.custom-prev.album',
         },
 
+        breakpoints: {
+            600: {
+                slidesPerView: 3
+            },
+            0: {
+                slidesPerView: 1,
+                centeredSlides: true
+            }
+        }
+
     });
 
     function positionSlides(swiper) {
