@@ -16,6 +16,8 @@
     .hero_title_wrap {
         gap: 24px;
         margin-bottom: 140px;
+        width: 85%;
+        padding: 0;
     }
     .hero_title_wrap .contents_article_large br{display: none;}
     .hero_01 img{ width: 50%; height: auto; }
@@ -28,4 +30,13 @@
     .swiper-pagination-fraction {
         bottom: var(--swiper-pagination-bottom, 40px);
     }
+
+    /* multimedia */
+    .multimedia .section_title{margin-bottom: 20px;}
+    .multimedia .contents_thum_wrap{padding: 80px 0;}
+    .multimedia .contents_thum_wrap .contents_thum{width: 85%;}
+    .multimedia .contents_thum .play_btn, .multimedia .contents_thum .pause_btn{width: 40px; height: 40px; transform: translate(-20px, -20px);}
+    .custom-prev, .custom-next {width: 32px; height: 32px;}
+
+
 }
