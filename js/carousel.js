@@ -139,10 +139,10 @@ document.addEventListener(`DOMContentLoaded`, function () {
                 slidesPerView: 2,
             },
             600: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
             0: {
-                slidesPerView: 1,
+                slidesPerView: 1.8,
             }
         }
 
