@@ -6,8 +6,8 @@
     .swiper-slide:not(.swiper-slide-active).album .album_img {
         width: 540px; height: 540px;
     }
-    .custom-next.album{right: 24%;}
-    .custom-prev.album{left: 24%;}
+    .custom-next.album{right: 26%;}
+    .custom-prev.album{left: 26%;}
 }
 
 @media screen and (max-width:1280px) {

@@ -117,7 +117,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
 
     const releaseSwiper = new Swiper('.release_wrap', {
-        slidesPerView: '2.5', 
+        slidesPerView: '3', 
         centeredSlides: true,
         loop: true,
         speed: 300,
@@ -129,6 +129,9 @@ document.addEventListener(`DOMContentLoaded`, function () {
         },
 
         breakpoints: {
+            1280: {
+                slidesPerView: 2.8
+            },
             1024: {
                 slidesPerView: 2.5
             },
