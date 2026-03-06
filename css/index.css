@@ -265,7 +265,7 @@ header .logo { position: absolute; left: 40px; top: 50%; font-size: 0; margin-to
 }
 
 .btn_wrap {
-    display: flex; flex-wrap: wrap; gap: 24px;
+    display: flex; flex-wrap: wrap; gap: 20px;
     opacity: 1; visibility: visible;
     transition: opacity 0.8s ease, visibility 0.8s ease;
 }

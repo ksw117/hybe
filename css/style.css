@@ -61,6 +61,7 @@
 
     .section_title{font-size: 28px;}
 
+    .btn{ font-size: 13px; padding: 10px 18px 10px 16px;}
 }
 
 @media screen and (max-width:600px) {
@@ -68,8 +69,7 @@
 
     .section_title{font-size: 26px; margin-bottom: 20px;}
 
-    .btn{ font-size: 12px; padding: 8px 18px 8px 15px;}
-
+    .btn{ font-size: 12px; padding: 8px 18px 8px 15px; gap: 6px;}
 }
 
 @media screen and (max-width:480px) {
