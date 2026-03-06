@@ -67,20 +67,18 @@
 @media screen and (max-width:600px) {
     .contents_title_large{font-size: 20px;  letter-spacing: -1px; }
 
-    .section_title{font-size: 26px; margin-bottom: 20px;}
+    .section_title{font-size: 26px;}
 
-    .btn{ font-size: 12px; padding: 8px 18px 8px 15px; gap: 6px;}
+    .btn{ font-size: 12px; padding: 8px 18px 8px 16px; gap: 6px;}
 }
 
 @media screen and (max-width:480px) {
     .contents_title_large{font-size: 18px;text-align: center;}
     .contents_title_medium{font-size: 16px; letter-spacing: -0.5px;}
 
-
     .contents_article_large { font-size: 16px; font-weight: 600; letter-spacing: -0.5px; line-height: 130% ;}
-
 
     .section_title{font-size: 24px; margin-bottom: 40px;}
 
-
+    .btn{padding: 8px 16px 8px 14px;}
 }
