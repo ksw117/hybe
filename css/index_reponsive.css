@@ -5,11 +5,7 @@
 @media screen and (max-width:1024px) {
 }
 
-@media screen and (max-width:768px) {
-    .hero_01 img{ width: 30%; height: auto; }
-    .hero_02 img{ width: 14%; height: auto; }
-    .hero_03 img{ width: 30%; height: auto; }
-}
+@media screen and (max-width:768px) {}
 
 @media screen and (max-width:600px) {
     .hero_wrap {height: 90vh;}
@@ -23,7 +19,7 @@
     }
     .hero_title_wrap .contents_article_large br{display: none;}
     .hero_01 img{ width: 50%; height: auto; }
-    .hero_02 img{ width: 30%; height: auto; }
+    .hero_02 img{ width: 25%; height: auto; }
     .hero_03 img{ width: 50%; height: auto; }
 
     .swiper-horizontal>.swiper-pagination-bullets,
