@@ -45,7 +45,6 @@
     .contents_article_large { font-size: 20px;}
 
     .section_title{font-size: 32px;}
-
 }
 
 @media screen and (max-width:1024px) {
@@ -53,6 +52,8 @@
 
     .section_title{font-size: 30px;}
     .btn{ font-size: 14px; padding: 10px 20px 10px 18px}
+
+    .artist_title{ font-size: 43px;}
 }
 
 @media screen and (max-width:768px) {
@@ -62,6 +63,8 @@
     .section_title{font-size: 28px;}
 
     .btn{ font-size: 13px; padding: 10px 18px 10px 16px;}
+
+    .artist_title{ font-size: 38px;}
 }
 
 @media screen and (max-width:600px) {
@@ -70,6 +73,8 @@
     .section_title{font-size: 26px;}
 
     .btn{ font-size: 12px; padding: 8px 18px 8px 16px; gap: 6px;}
+
+    .artist_title{ font-size: 33px;}
 }
 
 @media screen and (max-width:480px) {
