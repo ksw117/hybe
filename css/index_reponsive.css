@@ -51,7 +51,7 @@
     .custom-next.multi{right: 2%;}
 
     /* release */
-    .album .album_img {width: 3440px; height: 344px;}
+    .album .album_img {width: 344px; height: 344px;}
     .swiper-slide:not(.swiper-slide-active).album .album_img {
         width: 344px; height: 344px;
     }
@@ -71,8 +71,8 @@
     }
     .btn_wrap{gap: 10px;}
 
-    .custom-next.album{right: 12%;}
-    .custom-prev.album{left: 12%;}
+    .custom-next.album{right: 16%;}
+    .custom-prev.album{left: 16%;}
 
 }
 
@@ -120,4 +120,7 @@
     } */
     .btn_wrap{gap: 8px; justify-content: center;}
 
+    .custom-next.album, .custom-prev.album{ top: 34%;}
+    .custom-next.album{right: 8%;}
+    .custom-prev.album{left: 8%;}
 }
