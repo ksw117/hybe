@@ -110,7 +110,7 @@
 
 
     /* artist */
-    .artist_name { font-size: 32px; margin-bottom: 8px; }
+    .artist_name { font-size: 32px; margin-bottom: 20px; }
 }
 
 @media screen and (max-width:600px) {
@@ -179,5 +179,5 @@
     .custom-prev.album{left: 8%;}
 
     /* artist */
-    .artist_name { font-size: 24px; margin-bottom: 4px;}
+    .artist_name { font-size: 24px; margin-bottom: 16px;}
 }
