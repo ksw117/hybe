@@ -194,7 +194,6 @@ document.addEventListener(`DOMContentLoaded`, function () {
       });
     });
 
-
     const labelsSwiper = new Swiper('.labels_wrap', {
         slidesPerView: 4.5,
         spaceBetween: 24,

@@ -180,41 +180,14 @@
     /* artist */
     .artist_name { font-size: 24px;}
 
-    /* flatform */
-    .flatform{width: 95%; margin: 80px auto;}
-    .flatform .flatform_card_wrap{gap: 12px; justify-content: center;}
-    .flatform_card{
-        width: calc( (100% - 12px) / 2 ); height: 320px;
+    /* platform */
+    .platform{width: 95%; margin: 80px auto;}
+    .platform .platform_card_wrap{gap: 12px; justify-content: center;}
+    .platform_card{
+        width: calc( ( 100% - 12px ) / 2 ); height: 320px;
         gap: 36px;
     }
-    .flatform_card:nth-child(2), .flatform_card:last-child{margin-top: 60px;}
-    .flatform_card .text_wrap br{display: none;}
+    .platform_card:nth-child(2), .platform_card:last-child{margin-top: 60px;}
+    .platform_card .text_wrap br{display: none;}
 
-    .flatform .flatform_card_wrap{
-        width: 100%;
-        flex-direction: column;
-        gap: 16px;
-    }
-    
-    .flatform_card{
-        width: 100%;
-        aspect-ratio: 1 / 1.2;
-        padding: 24px 20px;
-        gap: 24px;
-    }
-    
-    /* 내려오는 카드 제거 */
-    .flatform_card:nth-child(2),
-    .flatform_card:nth-child(4){
-        margin-top: 0;
-    }
-    
-    /* 아이콘 크기 */
-    .flatform_icon{
-        width: 72px;
-    }
-    
-    .flatform_logo{
-        width: 140px;
-    }
 }
