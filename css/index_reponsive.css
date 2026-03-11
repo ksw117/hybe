@@ -76,7 +76,7 @@
     }
 
     .artist_text_wrap {
-        width: 100%;
+        width: 100%; height: auto;
         flex-direction: row;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
