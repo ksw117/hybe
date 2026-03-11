@@ -181,6 +181,7 @@
     .artist_name { font-size: 24px;}
 
     /* platform */
+    /* 슬라이드로 만들기 */
     .platform{width: 95%; margin: 80px auto;}
     .platform .platform_card_wrap{gap: 12px; justify-content: center;}
     .platform_card{
