@@ -343,7 +343,7 @@ header .logo { position: absolute; left: 40px; top: 50%; font-size: 0; margin-to
 }
 
 .artist_text_wrap {
-    width: 452px; height: 770px;
+    width: 400px; height: 770px;
     overflow-y: auto;
     display: flex; flex-direction: column;
 }
