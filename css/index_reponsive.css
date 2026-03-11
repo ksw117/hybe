@@ -80,11 +80,12 @@
         flex-direction: row;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        height: auto;
+        -webkit-overflow-scrolling: touch;
     }
     .artist_name { font-size: 32px; margin-bottom: 24px; white-space: nowrap;}
 
-    .artist_text_wrap::-webkit-scrollbar{height: 6px;}
+    .artist_text_wrap::-webkit-scrollbar{height: 4px;}
+    
 
 }
 
