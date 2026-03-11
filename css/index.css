@@ -401,7 +401,7 @@ header .logo { position: absolute; left: 40px; top: 50%; font-size: 0; margin-to
 }
 
 .flatform .flatform_card_wrap{
-    width: 100%;
+    width: 95%;
     display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 20px;
 }
 
