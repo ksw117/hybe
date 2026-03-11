@@ -83,7 +83,7 @@
         -webkit-overflow-scrolling: touch;
     }
     .artist_name { font-size: 32px; margin-bottom: 24px; white-space: nowrap;}
-    .artist_name.active { transform: translate(0px, -4px); }
+    .artist_name.active { transform: translate(0px, -6px); }
     .artist_text_wrap::-webkit-scrollbar{height: 4px;}
 }
 
@@ -109,7 +109,7 @@
 
 
     /* artist */
-    .artist_name { font-size: 32px; margin-bottom: 20px; }
+    .artist_name { font-size: 32px; }
 }
 
 @media screen and (max-width:600px) {
@@ -126,7 +126,7 @@
     .custom-prev.album{left: 16%;}
 
     /* artist */
-    .artist_name { font-size: 26px; margin-bottom: 16px;}
+    .artist_name { font-size: 26px;  margin-bottom: 16px;}
 }
 
 @media screen and (max-width:480px) {
@@ -178,5 +178,5 @@
     .custom-prev.album{left: 8%;}
 
     /* artist */
-    .artist_name { font-size: 24px; margin-bottom: 12px;}
+    .artist_name { font-size: 24px;}
 }
