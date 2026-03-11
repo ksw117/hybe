@@ -179,4 +179,13 @@
 
     /* artist */
     .artist_name { font-size: 24px;}
+
+    /* flatform */
+    .flatform{width: 95%;}
+    .flatform .flatform_card_wrap{gap: 12px; justify-content: center;}
+    .flatform_card{
+        width: calc( (100% - 12px) / 2 ); height: 360px;
+    }
+    .flatform_card:nth-child(2), .flatform_card:last-child{margin-top: 60px;}
+    .flatform_card .text_wrap br{display: none;}
 }
