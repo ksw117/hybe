@@ -29,6 +29,13 @@
     .artist_name{font-size: 26px;}
     .artist_img_wrap{height: 540px;}
 
+    /* platform */
+    .platform_card{gap: 40px;}
+    .platform_card .card_contents{gap: 20px;}
+    .platform_card:nth-child(2), .platform_card:last-child {
+        margin-top: 140px;
+    }
+
 }
 
 @media screen and (max-width:1024px) {
@@ -85,6 +92,23 @@
     .artist_name { font-size: 32px; margin-bottom: 24px; white-space: nowrap;}
     .artist_name.active { transform: translate(0px, -6px); }
     .artist_text_wrap::-webkit-scrollbar{height: 4px;}
+
+    /* platform */
+    .platform .platform_card_wrap .swiper-wrapper{gap: 16px;}
+    .platform_card{
+        width: calc((100% - 48px) / 4);
+        gap: 20px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .platform_card .card_contents{gap: 16px;}
+    .platform_card:nth-child(2), .platform_card:last-child {margin-top: 120px;}
+    .platform_card .platform_logo{ width: 72%; }
+    .platform_card:nth-child(2), .platform_card:nth-child(3), .platform_card:last-child {
+        gap: 5%;
+    }
+    .platform_card .text_wrap br{display: none;}
+
 }
 
 @media screen and (max-width:768px) {
@@ -107,9 +131,20 @@
     .custom-next.album{right: 16%;}
     .custom-prev.album{left: 16%;}
 
-
     /* artist */
     .artist_name { font-size: 32px; }
+
+    /* platfrom */
+    .platform .platform_card_wrap .swiper-wrapper{gap: 20px;}
+    .platform_card{
+        width: calc((100% - 40px) / 2);
+        gap: 32px;
+        padding: 4% 3%;
+    }
+    .platform_card .card_contents{gap: 24px;}
+    .platform_card:nth-child(2), .platform_card:nth-child(3), .platform_card:last-child {
+        gap: 7%;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -127,6 +162,20 @@
 
     /* artist */
     .artist_name { font-size: 26px;  margin-bottom: 16px;}
+
+    /* platfrom */
+    .platform .platform_card_wrap .swiper-wrapper{gap: 16px;}
+    .platform_card{
+        width: calc((100% - 36px) / 2);
+        gap: 24px;
+        padding: 4% 3%;
+    }
+    .platform_card .card_contents{gap: 16px;}
+    .platform_card:nth-child(2), .platform_card:last-child {margin-top: 100px;}
+    .platform_card:nth-child(2), .platform_card:nth-child(3), .platform_card:last-child {
+        gap: 5%;
+    }
+
 }
 
 @media screen and (max-width:480px) {
@@ -188,7 +237,7 @@
     .platform_card{ width: auto; height: auto; gap: 36px; }
     .platform_card:nth-child(2), .platform_card:last-child{margin-top: 0;}
 
-    .platform_card .text_wrap br{display: none;}
+
 
     /* .swiper-pagination.platform_pagination{
         position: absolute;
