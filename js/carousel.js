@@ -1,4 +1,5 @@
 document.addEventListener(`DOMContentLoaded`, function () {
+    // hero
     var swiper = new Swiper(".hero_wrap", {
         spaceBetween: 30,
         centeredSlides: true,
@@ -18,6 +19,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
     });
 
+    // multimedia
     const multimediaSwiper = new Swiper('.multimedia_wrap', {
         slidesPerView: 1,
         effect: "fade",
@@ -34,7 +36,6 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
         
     });
-
 
     const slides = document.querySelectorAll(".multimedia_contents");
 
@@ -115,7 +116,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
         });
     });
 
-
+    // release
     const releaseSwiper = new Swiper('.release_wrap', {
         slidesPerView: '3', 
         centeredSlides: true,
@@ -180,7 +181,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
     }
 
 
-
+    // artist
     const artists = document.querySelectorAll('.artist_name');
     const images = document.querySelectorAll('.artist_img');
     
@@ -194,6 +195,44 @@ document.addEventListener(`DOMContentLoaded`, function () {
       });
     });
 
+    // platform
+    // const platformSwiper = new Swiper(".platform_card_wrap", {
+    
+    //     slidesPerView: 1.2,
+    //     spaceBetween: 16,
+    //     centeredSlides: true,
+    
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         clickable: true
+    //     },
+    
+    //     breakpoints: {
+    //         481: {
+    //             slidesPerView: 4,
+    //             spaceBetween: 20,
+    //         },
+    //     }
+    
+    // });
+
+    if (window.innerWidth <= 480) {
+
+        new Swiper(".platform_card_wrap", {
+            slidesPerView: 1.5,
+            spaceBetween: 16,
+            centeredSlides: true,
+            // pagination: {
+            //     el: ".platform_pagination",
+            //     clickable: true
+            // }
+        });
+    
+    }
+
+
+
+    // labels
     const labelsSwiper = new Swiper('.labels_wrap', {
         slidesPerView: 4.5,
         spaceBetween: 24,

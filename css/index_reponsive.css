@@ -183,12 +183,16 @@
     /* platform */
     /* 슬라이드로 만들기 */
     .platform{width: 95%; margin: 80px auto;}
-    .platform .platform_card_wrap{gap: 12px; justify-content: center;}
-    .platform_card{
-        width: calc( ( 100% - 12px ) / 2 ); height: 320px;
-        gap: 36px;
-    }
-    .platform_card:nth-child(2), .platform_card:last-child{margin-top: 60px;}
+    .platform_card_wrap{position: relative; padding-bottom: 40px; box-sizing: border-box;}
+    .platform .platform_card_wrap .swiper-wrapper{flex-wrap: nowrap; gap: 0; justify-content: flex-start;}
+    .platform_card{ width: auto; height: auto; gap: 36px; }
+    .platform_card:nth-child(2), .platform_card:last-child{margin-top: 0;}
+
     .platform_card .text_wrap br{display: none;}
+
+    /* .swiper-pagination.platform_pagination{
+        position: absolute;
+        bottom: var(--swiper-pagination-bottom, -20px);
+    } */
 
 }
