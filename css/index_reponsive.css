@@ -94,19 +94,19 @@
     .artist_text_wrap::-webkit-scrollbar{height: 4px;}
 
     /* platform */
-    .platform .platform_card_wrap .swiper-wrapper{gap: 16px;}
+    .platform .platform_card_wrap .swiper-wrapper{gap: 0; flex-wrap: unset; justify-content: flex-start; overflow: visible;}
     .platform_card{
-        width: calc((100% - 48px) / 4); gap: 20px;
-        padding-left: 2%; padding-right: 2%;
-        aspect-ratio: 1 / 1.6;
+        width: auto; gap: 20px;
+        /* padding-left: 2%; padding-right: 2%; */
     }
-    .platform_card .card_contents{gap: 16px;}
-    .platform_card:nth-child(2), .platform_card:last-child {margin-top: 120px;}
+    .platform_card:nth-child(2), .platform_card:last-child {margin-top: 0;}
+    /* .platform_card .card_contents{gap: 16px;}
+
     .platform_card .platform_logo{ width: 72%; }
     .platform_card:nth-child(2), .platform_card:nth-child(3), .platform_card:last-child {
         gap: 5%;
     }
-    .platform_card .text_wrap br{display: none;}
+    .platform_card .text_wrap br{display: none;} */
 
 }
 
@@ -134,9 +134,9 @@
     .artist_name { font-size: 32px; }
 
     /* platfrom */
-    .platform .platform_card_wrap .swiper-wrapper{gap: 20px;}
+    /* .platform .platform_card_wrap .swiper-wrapper{gap: 20px;}
     .platform_card{
-        width: calc((100% - 40px) / 2);
+        width: auto;
         gap: 32px;
         padding: 4% 3%;
         aspect-ratio: 1 / 1.4;
@@ -144,7 +144,7 @@
     .platform_card .card_contents{gap: 24px;}
     .platform_card:nth-child(2), .platform_card:nth-child(3), .platform_card:last-child {
         gap: 7%;
-    }
+    } */
 }
 
 @media screen and (max-width:600px) {
@@ -164,9 +164,9 @@
     .artist_name { font-size: 26px;  margin-bottom: 16px;}
 
     /* platfrom */
-    .platform .platform_card_wrap .swiper-wrapper{gap: 16px;}
+    /* .platform .platform_card_wrap .swiper-wrapper{gap: 16px;}
     .platform_card{
-        width: calc((100% - 36px) / 2);
+        width: auto;
         gap: 24px;
         padding: 4% 3%;
     }
@@ -174,7 +174,7 @@
     .platform_card:nth-child(2), .platform_card:last-child {margin-top: 100px;}
     .platform_card:nth-child(2), .platform_card:nth-child(3), .platform_card:last-child {
         gap: 5%;
-    }
+    } */
 
 }
 
@@ -231,11 +231,11 @@
 
     /* platform */
     /* 슬라이드로 만들기 */
-    .platform{width: 95%; margin: 80px auto;}
-    .platform_card_wrap{position: relative; padding-bottom: 40px; box-sizing: border-box;}
+    /* .platform{width: 95%; margin: 80px auto;}
+    .platform_card_wrap{position: relative; box-sizing: border-box;}
     .platform .platform_card_wrap .swiper-wrapper{flex-wrap: nowrap; gap: 0; justify-content: flex-start;}
     .platform_card{ width: auto; height: auto; gap: 36px; }
-    .platform_card:nth-child(2), .platform_card:last-child{margin-top: 0;}
+    .platform_card:nth-child(2), .platform_card:last-child{margin-top: 0;} */
 
 
 

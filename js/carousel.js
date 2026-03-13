@@ -196,40 +196,51 @@ document.addEventListener(`DOMContentLoaded`, function () {
     });
 
     // platform
-    // const platformSwiper = new Swiper(".platform_card_wrap", {
-    
-    //     slidesPerView: 1.2,
-    //     spaceBetween: 16,
-    //     centeredSlides: true,
-    
-    //     pagination: {
-    //         el: ".swiper-pagination",
-    //         clickable: true
-    //     },
-    
-    //     breakpoints: {
-    //         481: {
-    //             slidesPerView: 4,
-    //             spaceBetween: 20,
-    //         },
-    //     }
-    
-    // });
+    let platformSwiper;
 
-    if (window.innerWidth <= 480) {
-
-        new Swiper(".platform_card_wrap", {
-            slidesPerView: 1.5,
-            spaceBetween: 16,
-            centeredSlides: true,
-            grabCursor: true,
-            // pagination: {
-            //     el: ".platform_pagination",
-            //     clickable: true
-            // }
-        });
+    function initPlatformSwiper() {
     
+        if (window.innerWidth <= 1024 && !platformSwiper) {
+    
+            platformSwiper = new Swiper(".platform_card_wrap", {
+                slidesPerView: 2.5,  // 기본값 (1024 이하)
+                spaceBetween: 16,
+                centeredSlides: false,
+                grabCursor: true,
+    
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1.3,
+                        spaceBetween: 12,
+                    },
+                    // 480px 이상
+                    480: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 14,
+                    },
+                    // 600px 이상
+                    600: {
+                        slidesPerView: 1.8,
+                        spaceBetween: 14,
+                    },
+                    // 768px 이상
+                    768: {
+                        slidesPerView: 2.5,
+                        spaceBetween: 16,
+                    },
+                }
+            });
+    
+        } else if (window.innerWidth > 1024 && platformSwiper) {
+    
+            platformSwiper.destroy(true, true);
+            platformSwiper = undefined;
+    
+        }
     }
+    
+    initPlatformSwiper();
+    window.addEventListener("resize", initPlatformSwiper);
 
 
 
