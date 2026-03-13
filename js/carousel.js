@@ -246,7 +246,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
     // labels
     const labelsSwiper = new Swiper('.labels_wrap', {
-        slidesPerView: 4.5,
+        slidesPerView: "auto",
         spaceBetween: 24,
         centeredSlides: false, // centeredSlides를 false로 변경
         slidesOffsetBefore: 160, // 시작 위치 오프셋
@@ -260,8 +260,31 @@ document.addEventListener(`DOMContentLoaded`, function () {
             nextEl: '.custom-next.labels',
             prevEl: '.custom-prev.labels',
         },
-
-        
+        breakpoints: {
+            0: {
+                spaceBetween: 8,
+                slidesOffsetBefore: 0
+            },
+            480: {
+                spaceBetween: 8,
+                slidesOffsetBefore: 0
+            },
+            600: {
+                spaceBetween: 12,
+                slidesOffsetBefore: 0
+            },
+            768: {
+                spaceBetween: 16,
+                slidesOffsetBefore: 0
+            },
+            1024: {
+                spaceBetween: 20,
+                slidesOffsetBefore: 0
+            },
+            1280: {
+                spaceBetween: 24,
+            },
+        }
     });
 
 

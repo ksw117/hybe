@@ -15,6 +15,9 @@
 
     /* platform */
     .platform_card:nth-child(2), .platform_card:last-child{margin-top: 140px;}
+
+    /* labels */
+    .labels_card{ width: 400px;}
 }
 
 @media screen and (max-width:1280px) {
@@ -39,8 +42,13 @@
     .platform_card:nth-child(2), .platform_card:last-child {
         margin-top: 120px;
     }
+    .platform_card .platform_logo{width: 64%;}
     .platform_card .text_wrap br{display: none;}
 
+    /* labels */
+    .labels_card{ width: 380px;}
+    .custom-prev.labels{ right: 6%;}
+    .custom-next.labels{right: 2%;}
 }
 
 @media screen and (max-width:1024px) {
@@ -114,6 +122,10 @@
     }
     .platform_card .text_wrap br{display: none;} */
 
+    /* labels */
+    .labels_card{ width: 360px;}
+    .custom-prev.labels{ right: 8%;}
+    .custom-next.labels{right: 2%;}
 }
 
 @media screen and (max-width:768px) {
@@ -151,6 +163,17 @@
     .platform_card:nth-child(2), .platform_card:nth-child(3), .platform_card:last-child {
         gap: 7%;
     } */
+
+    /* labels */
+    .labels_card{ width: 340px;}
+    .custom-prev.labels{ right: 8%;}
+    .custom-next.labels{right: 2%;}
+
+    /* news */
+    .news_list{padding: 52px 0;}
+    .news_list .contents_title_small, 
+    .news_list .contents_article_small{ width: 120px; text-align: center;}
+    .news_article{padding: 0;}
 }
 
 @media screen and (max-width:600px) {
@@ -182,6 +205,14 @@
         gap: 5%;
     } */
 
+    /* labels */
+    .labels_card{ width: 320px;}
+
+    /* news */
+    .news_list{gap: 8px; padding: 48px 0;}
+    .news_list .contents_title_small, 
+    .news_list .contents_article_small{ width: 100px; text-align: center;}
+    .news_article{padding: 0;}
 }
 
 @media screen and (max-width:480px) {
@@ -242,5 +273,16 @@
     .platform .platform_card_wrap .swiper-wrapper{flex-wrap: nowrap; gap: 0; justify-content: flex-start;}
     .platform_card{ width: auto; height: auto; gap: 36px; }
     .platform_card:nth-child(2), .platform_card:last-child{margin-top: 0;} */
+
+    /* labels */
+    .labels_card{ width: 300px;}
+    .custom-prev.labels{ right: 10%;}
+    .custom-next.labels{right: 2%;}
+
+    /* news */
+    .news{margin: 80px auto;}
+    .news_list{gap: 4px; padding: 40px 0;}
+    .news_list .contents_title_small, 
+    .news_list .contents_article_small{ width: 80px; text-align: center;}
 
 }

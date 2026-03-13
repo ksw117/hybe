@@ -445,7 +445,7 @@ header .logo { position: absolute; left: 40px; top: 50%; font-size: 0; margin-to
 
 .labels_card{
     width: 420px; padding: 18px;
-    display: flex; flex-wrap: wrap; flex-direction: column; gap: 24px;
+    display: flex; flex-wrap: wrap; flex-direction: column; gap: 24px; flex-shrink: 0;
     border: 1px solid #999; box-sizing: border-box;
 }
 .labels_top{display: flex; flex-wrap: wrap; justify-content: start; align-items: center;gap: 18px;}
@@ -466,10 +466,21 @@ header .logo { position: absolute; left: 40px; top: 50%; font-size: 0; margin-to
 .labels_card[data-label="13"] .labels_top .labels_logo{background: url(../images/label_13.png) no-repeat 50% 50% / cover;}
 .labels_card[data-label="14"] .labels_top .labels_logo{background: url(../images/label_14.png) no-repeat 50% 50% / cover;}
 
-.labels_card .text_wrap{display: flex; flex-wrap: wrap; flex-direction: column; gap: 8px;}
+.labels_card .text_wrap{display: flex; flex-wrap: wrap; flex-direction: column; gap: 8px; flex: 1; min-width: 0; }
 .labels_card .text_wrap .title_wrap{display: flex; flex-wrap: wrap; flex-direction: column; gap: 2px;}
 .labels_card .text_wrap .title_wrap .contents_article_small,
 .labels_card .text_wrap .title_wrap .contents_title_medium{text-transform: uppercase;}
+.labels_card .text_wrap .contents_article_xsmall{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
 .labels_btn{
     width: 100%; padding: 10px 0; box-sizing: border-box;
     display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
@@ -618,3 +629,5 @@ footer { display: none; }
 .multimedia{display: block;}
 .release{display: block;}
 .artist{display: block;}
+.labels {display: block;}
+.news{display: flex;}
