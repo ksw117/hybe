@@ -222,6 +222,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
             slidesPerView: 1.5,
             spaceBetween: 16,
             centeredSlides: true,
+            grabCursor: true,
             // pagination: {
             //     el: ".platform_pagination",
             //     clickable: true
