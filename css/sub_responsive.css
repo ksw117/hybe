@@ -1,0 +1,63 @@
+@media screen and (max-width:1440px) {
+    .hero_img{width: 80%;}
+
+    /* about */
+    .company_img{height: 400px;}
+}
+
+@media screen and (max-width:1280px) {
+    /* about */
+    .company_img{height: 360px;}
+
+    /* leader */
+    .leader_contents_top .leader_img_01{height: 440px;}
+}
+
+@media screen and (max-width:1024px) {
+    /* about */
+    .company_img{height: 320px;}
+
+    /* leader */
+    .leader_contents_top .leader_img_01{width: 100%; height: 400px;}
+    .leader_contents_btm .btm_leader{width: calc( ( 100% - 20px ) / 2 );}
+}
+
+@media screen and (max-width:768px) {
+    .hero{height: 700px;}
+
+    /* about */
+    .company_img{height: 280px;}
+
+    /* leader */
+    .leader_contents_top{flex-direction: column;}
+    .leader_contents_top .leader_img_01{width: 100%; height: 360px;}
+}
+
+@media screen and (max-width:600px) {
+    /* about */
+    .company_img{height: 240px;}
+
+    /* leader */
+    .leader_contents_top .leader_img_01{width: 100%; height: 320px;}
+    .leader_contents_btm{gap: 16px;}
+    .leader_contents_btm .btm_leader{width: calc( ( 100% - 16px ) / 2 );}
+}
+
+@media screen and (max-width:480px) {
+    .hero{height: 600px;}
+    .hero_text_wrap{left: 10%;}
+
+    /* about */
+    .about{padding: 120px 0;}
+    .company_img{height: 200px;}
+
+    /* leader */
+    .leader{padding: 120px 0;}
+    .leader_contents_top .leader_img_01{width: 100%; height: 200px;}
+    .leader_contents_btm{flex-direction: column; gap: 40px;}
+    .leader_contents_btm .btm_leader{width: 100%;}
+    .leader .contents_article_small{ line-height: 160%;}
+
+    /* ci */
+    .ci{padding: 80px 0;}
+}
