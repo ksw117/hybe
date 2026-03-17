@@ -41,4 +41,5 @@
     }
 
     .footer_gnb ul{flex-direction: column;}
+    footer .btm .hybe_logo { width: 120px; height: 62px; }
 }
