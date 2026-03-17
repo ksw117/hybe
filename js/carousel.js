@@ -200,11 +200,11 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
     function initPlatformSwiper() {
     
-        if (window.innerWidth <= 1024 && !platformSwiper) {
+        if (window.innerWidth <= 1280 && !platformSwiper) {
     
             platformSwiper = new Swiper(".platform_card_wrap", {
-                slidesPerView: 2.5,  // 기본값 (1024 이하)
-                spaceBetween: 16,
+                slidesPerView: 3.5, 
+                spaceBetween: 20,
                 centeredSlides: false,
                 grabCursor: true,
     
@@ -229,17 +229,17 @@ document.addEventListener(`DOMContentLoaded`, function () {
                         spaceBetween: 16,
                     },
                     1024: {
-                        slidesPerView: 3,
+                        slidesPerView: 3.5,
                         spaceBetween: 16,
                     },
                     1280: {
                         slidesPerView: 3.5,
-                        spaceBetween: 16,
+                        spaceBetween: 20,
                     },
                 }
             });
     
-        } else if (window.innerWidth > 1024 && platformSwiper) {
+        } else if (window.innerWidth > 1280 && platformSwiper) {
     
             platformSwiper.destroy(true, true);
             platformSwiper = undefined;
@@ -271,23 +271,21 @@ document.addEventListener(`DOMContentLoaded`, function () {
         breakpoints: {
             0: {
                 spaceBetween: 8,
-                slidesOffsetBefore: 0
+                slidesOffsetBefore: 20,
             },
             480: {
                 spaceBetween: 8,
-                slidesOffsetBefore: 0
+                slidesOffsetBefore: 40,
             },
             600: {
                 spaceBetween: 12,
-                slidesOffsetBefore: 0
+                slidesOffsetBefore: 80,
             },
             768: {
                 spaceBetween: 16,
-                slidesOffsetBefore: 0
             },
             1024: {
                 spaceBetween: 20,
-                slidesOffsetBefore: 0
             },
             1280: {
                 spaceBetween: 24,

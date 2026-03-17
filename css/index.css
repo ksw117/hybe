@@ -411,7 +411,7 @@ header .logo { position: absolute; left: 40px; top: 50%; font-size: 0; margin-to
 .platform_card{
     width: calc( (100% - 60px) / 4 ); aspect-ratio: 1 / 1.4; position: relative; overflow: hidden;
     display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 40px;
-    border-radius: 20px; padding: 4% 3%; box-sizing: border-box;
+    border-radius: 20px; padding: 4% 2%; box-sizing: border-box;
     background: linear-gradient(149deg, #0074E2 0%, #80BAF0 50%, #FFF 100%);
     transition: 1s ease;
 }

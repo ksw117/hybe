@@ -36,14 +36,15 @@
     .artist_img_wrap{height: 540px;}
 
     /* platform */
-    .platform_card{gap: 24px; padding: 4% 1.5%;}
-    .platform_card:nth-child(2), .platform_card:nth-child(3), .platform_card:last-child{gap: 15px;}
-    .platform_card .card_contents{gap: 20px;}
-    .platform_card:nth-child(2), .platform_card:last-child {
-        margin-top: 120px;
+    .platform .platform_card_wrap .swiper-wrapper{gap: 0; flex-wrap: unset; justify-content: flex-start; overflow: visible;}
+    .platform_card{
+        width: auto;
+        gap: 24px; padding: 4% 1.5%;
     }
+    .platform_card .card_contents{gap: 20px;}
+    .platform_card:nth-child(2), .platform_card:last-child {margin-top: 0;}
     .platform_card .platform_logo{width: 64%;}
-    .platform_card .text_wrap br{display: none;}
+    /* .platform_card .text_wrap br{display: none;} */
 
     /* labels */
     .labels_card{ width: 380px;}
@@ -106,26 +107,15 @@
     .artist_name.active { transform: translate(0px, -6px); }
     .artist_text_wrap::-webkit-scrollbar{height: 4px;}
 
-    /* platform */
-    .platform .platform_card_wrap .swiper-wrapper{gap: 0; flex-wrap: unset; justify-content: flex-start; overflow: visible;}
-    .platform_card{
-        width: auto; gap: 40px;
-    }
-    .platform_card:nth-child(2), .platform_card:last-child {margin-top: 0;}
-
-   
-    /* .platform_card .card_contents{gap: 16px;}
-
-    .platform_card .platform_logo{ width: 72%; }
-    .platform_card:nth-child(2), .platform_card:nth-child(3), .platform_card:last-child {
-        gap: 5%;
-    }
-    .platform_card .text_wrap br{display: none;} */
 
     /* labels */
     .labels_card{ width: 360px;}
     .custom-prev.labels{ right: 8%;}
     .custom-next.labels{right: 2%;}
+
+    /* news */
+    .news_list .contents_title_small, 
+    .news_list .contents_article_small{ width: 120px; text-align: center;}
 }
 
 @media screen and (max-width:768px) {
@@ -151,19 +141,6 @@
     /* artist */
     .artist_name { font-size: 32px; }
 
-    /* platfrom */
-    /* .platform .platform_card_wrap .swiper-wrapper{gap: 20px;}
-    .platform_card{
-        width: auto;
-        gap: 32px;
-        padding: 4% 3%;
-        aspect-ratio: 1 / 1.4;
-    }
-    .platform_card .card_contents{gap: 24px;}
-    .platform_card:nth-child(2), .platform_card:nth-child(3), .platform_card:last-child {
-        gap: 7%;
-    } */
-
     /* labels */
     .labels_card{ width: 340px;}
     .custom-prev.labels{ right: 8%;}
@@ -172,7 +149,7 @@
     /* news */
     .news_list{padding: 52px 0;}
     .news_list .contents_title_small, 
-    .news_list .contents_article_small{ width: 120px; text-align: center;}
+    .news_list .contents_article_small{ width: 100px; text-align: center;}
     .news_article{padding: 0;}
 }
 
@@ -192,24 +169,11 @@
     /* artist */
     .artist_name { font-size: 26px;  margin-bottom: 16px;}
 
-    /* platfrom */
-    /* .platform .platform_card_wrap .swiper-wrapper{gap: 16px;}
-    .platform_card{
-        width: auto;
-        gap: 24px;
-        padding: 4% 3%;
-    }
-    .platform_card .card_contents{gap: 16px;}
-    .platform_card:nth-child(2), .platform_card:last-child {margin-top: 100px;}
-    .platform_card:nth-child(2), .platform_card:nth-child(3), .platform_card:last-child {
-        gap: 5%;
-    } */
-
     /* labels */
     .labels_card{ width: 320px;}
 
     /* news */
-    .news_list{gap: 10px; padding: 40px 20px;}
+    .news_list{gap: 16px; padding: 40px 20px;}
     .news_article{width: 100%;}
     .news_article .contents_article_medium{display: none;}
     .news_list .contents_title_small, 
@@ -267,14 +231,6 @@
     /* artist */
     .artist_name { font-size: 24px;}
 
-    /* platform */
-    /* 슬라이드로 만들기 */
-    /* .platform{width: 95%; margin: 80px auto;}
-    .platform_card_wrap{position: relative; box-sizing: border-box;}
-    .platform .platform_card_wrap .swiper-wrapper{flex-wrap: nowrap; gap: 0; justify-content: flex-start;}
-    .platform_card{ width: auto; height: auto; gap: 36px; }
-    .platform_card:nth-child(2), .platform_card:last-child{margin-top: 0;} */
-
     /* labels */
     .labels_card{ width: 300px;}
     .custom-prev.labels{ right: 10%;}
@@ -282,8 +238,7 @@
 
     /* news */
     .news{margin: 80px auto;}
-
-    .news_list{gap: 10px; padding: 40px 20px;}
+    .news_list{gap: 12px; padding: 40px 20px;}
     .news_article{width: 100%;}
     .news_list .contents_title_small, 
     .news_list .contents_article_small{ width: 100%; text-align: left;}
